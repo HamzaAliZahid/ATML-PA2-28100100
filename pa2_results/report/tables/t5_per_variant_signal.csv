@@ -1,0 +1,6 @@
+,verifier,rlaif_group_reward
+clean_correct,1.0,0.49375
+corrupt_reasoning_correct_final,1.0,0.5
+gold_distractor_wrong_final,0.0,0.425
+good_reasoning_wrong_final,0.0,0.48125
+persuasive_filler_correct,1.0,0.6

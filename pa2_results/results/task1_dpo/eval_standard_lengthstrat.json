@@ -1,0 +1,52 @@
+{
+  "name": "standard_lengthstrat",
+  "adapter": "outputs/task1_dpo/standard",
+  "beta": 0.1,
+  "preference_eval_file": "data/dpo_length_stratified_eval.jsonl",
+  "preference": {
+    "overall": {
+      "n": 237,
+      "preference_accuracy": 0.5780590717299579,
+      "dpo_loss": 0.6829820735545098,
+      "margin_mean": 0.2531989873210086,
+      "margin_std": 1.3924440130693712,
+      "chosen_reward_mean": -0.0695072324592856,
+      "rejected_reward_mean": -0.09482713120396127,
+      "chosen_longer_fraction": 0.46835443037974683
+    },
+    "skipped_too_long": 9,
+    "beta_used_for_loss": 0.1,
+    "by_stratum": {
+      "length_matched": {
+        "n": 80,
+        "preference_accuracy": 0.6,
+        "dpo_loss": 0.6863346748054028,
+        "margin_mean": 0.1696047991514206,
+        "margin_std": 1.1450017564520878,
+        "chosen_reward_mean": -0.051662325933575635,
+        "rejected_reward_mean": -0.06862280584871769,
+        "chosen_longer_fraction": 0.45
+      },
+      "preferred_longer": {
+        "n": 78,
+        "preference_accuracy": 0.46153846153846156,
+        "dpo_loss": 0.6987002331476945,
+        "margin_mean": -0.06237651140261919,
+        "margin_std": 1.3961571887335154,
+        "chosen_reward_mean": -0.09573678725805039,
+        "rejected_reward_mean": -0.08949913611778848,
+        "chosen_longer_fraction": 0.9615384615384616
+      },
+      "rejected_longer": {
+        "n": 79,
+        "preference_accuracy": 0.6708860759493671,
+        "dpo_loss": 0.6640678387653979,
+        "margin_mean": 0.6494322019287303,
+        "margin_std": 1.5172644416400496,
+        "chosen_reward_mean": -0.06168048875995829,
+        "rejected_reward_mean": -0.12662370899055575,
+        "chosen_longer_fraction": 0.0
+      }
+    }
+  }
+}

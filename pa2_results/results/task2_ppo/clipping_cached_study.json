@@ -1,0 +1,207 @@
+{
+  "n_rollouts": 32,
+  "n_valid_tokens": 8814,
+  "tokenization_mismatches": 0,
+  "advantage": "KL-shaped (beta_kl=config) terminal effective reward, GAE with cached values, whitened",
+  "steps_per_eps": 4,
+  "learning_rate": 3e-06,
+  "step0_midpoint_vs_cached_old": {
+    "ratio_mean": 1.0119818449020386,
+    "ratio_std": 0.5337115526199341,
+    "abs_log_ratio_mean": 0.06620997190475464,
+    "unclipped_surrogate": 0.00027960704755969346,
+    "per_eps": {
+      "0.05": {
+        "clip_fraction": 0.15429997444152832,
+        "affected_token_fraction": 0.07612888514995575,
+        "clipped_surrogate": -0.011394873261451721,
+        "surrogate_gap": 0.011674480512738228
+      },
+      "0.2": {
+        "clip_fraction": 0.04129793494939804,
+        "affected_token_fraction": 0.019741320982575417,
+        "clipped_surrogate": -0.007905383594334126,
+        "surrogate_gap": 0.008184990845620632
+      },
+      "0.5": {
+        "clip_fraction": 0.021102791652083397,
+        "affected_token_fraction": 0.010097571648657322,
+        "clipped_surrogate": -0.005374318454414606,
+        "surrogate_gap": 0.005653925705701113
+      }
+    }
+  },
+  "trajectories": {
+    "0.05": [
+      {
+        "step": 0,
+        "ratio_mean": 1.0119818449020386,
+        "ratio_std": 0.5337115526199341,
+        "abs_log_ratio_mean": 0.06620997190475464,
+        "unclipped_surrogate": 0.00027960704755969346,
+        "clip_fraction": 0.15429997444152832,
+        "affected_token_fraction": 0.07612888514995575,
+        "clipped_surrogate": -0.011394873261451721,
+        "surrogate_gap": 0.011674480512738228
+      },
+      {
+        "step": 1,
+        "ratio_mean": 1.011900782585144,
+        "ratio_std": 0.5332716107368469,
+        "abs_log_ratio_mean": 0.06611363589763641,
+        "unclipped_surrogate": 0.00038460816722363234,
+        "clip_fraction": 0.15373270213603973,
+        "affected_token_fraction": 0.0760154277086258,
+        "clipped_surrogate": -0.011269273236393929,
+        "surrogate_gap": 0.011653881520032883
+      },
+      {
+        "step": 2,
+        "ratio_mean": 1.012000560760498,
+        "ratio_std": 0.5334345698356628,
+        "abs_log_ratio_mean": 0.06618484109640121,
+        "unclipped_surrogate": 0.0003921101160813123,
+        "clip_fraction": 0.15350578725337982,
+        "affected_token_fraction": 0.07658270746469498,
+        "clipped_surrogate": -0.011289115063846111,
+        "surrogate_gap": 0.011681225150823593
+      },
+      {
+        "step": 3,
+        "ratio_mean": 1.01202392578125,
+        "ratio_std": 0.5334151387214661,
+        "abs_log_ratio_mean": 0.06619103997945786,
+        "unclipped_surrogate": 0.00044181349221616983,
+        "clip_fraction": 0.15475380420684814,
+        "affected_token_fraction": 0.07646925002336502,
+        "clipped_surrogate": -0.011241300031542778,
+        "surrogate_gap": 0.011683113873004913
+      },
+      {
+        "step": 4,
+        "ratio_mean": 1.01192045211792,
+        "ratio_std": 0.5333017110824585,
+        "abs_log_ratio_mean": 0.06619928777217865,
+        "unclipped_surrogate": 0.00042709114495664835,
+        "clip_fraction": 0.1520308554172516,
+        "affected_token_fraction": 0.07680962234735489,
+        "clipped_surrogate": -0.01126625295728445,
+        "surrogate_gap": 0.011693344451487064
+      }
+    ],
+    "0.2": [
+      {
+        "step": 0,
+        "ratio_mean": 1.0119818449020386,
+        "ratio_std": 0.5337115526199341,
+        "abs_log_ratio_mean": 0.06620997190475464,
+        "unclipped_surrogate": 0.00027960704755969346,
+        "clip_fraction": 0.04129793494939804,
+        "affected_token_fraction": 0.019741320982575417,
+        "clipped_surrogate": -0.007905383594334126,
+        "surrogate_gap": 0.008184990845620632
+      },
+      {
+        "step": 1,
+        "ratio_mean": 1.0119763612747192,
+        "ratio_std": 0.5334309935569763,
+        "abs_log_ratio_mean": 0.06622124463319778,
+        "unclipped_surrogate": 0.00034027238143607974,
+        "clip_fraction": 0.04107102379202843,
+        "affected_token_fraction": 0.019741320982575417,
+        "clipped_surrogate": -0.007843850180506706,
+        "surrogate_gap": 0.00818412285298109
+      },
+      {
+        "step": 2,
+        "ratio_mean": 1.011971354484558,
+        "ratio_std": 0.5334036946296692,
+        "abs_log_ratio_mean": 0.06619736552238464,
+        "unclipped_surrogate": 0.00042098521953448653,
+        "clip_fraction": 0.041184477508068085,
+        "affected_token_fraction": 0.019854776561260223,
+        "clipped_surrogate": -0.007769964635372162,
+        "surrogate_gap": 0.008190949447453022
+      },
+      {
+        "step": 3,
+        "ratio_mean": 1.0120387077331543,
+        "ratio_std": 0.5334916114807129,
+        "abs_log_ratio_mean": 0.06616049259901047,
+        "unclipped_surrogate": 0.0004000022017862648,
+        "clip_fraction": 0.041184477508068085,
+        "affected_token_fraction": 0.019741320982575417,
+        "clipped_surrogate": -0.007783656474202871,
+        "surrogate_gap": 0.008183659054338932
+      },
+      {
+        "step": 4,
+        "ratio_mean": 1.012014627456665,
+        "ratio_std": 0.5335157513618469,
+        "abs_log_ratio_mean": 0.06621848791837692,
+        "unclipped_surrogate": 0.00040240143425762653,
+        "clip_fraction": 0.04129793494939804,
+        "affected_token_fraction": 0.019854776561260223,
+        "clipped_surrogate": -0.0077911908738315105,
+        "surrogate_gap": 0.00819359254091978
+      }
+    ],
+    "0.5": [
+      {
+        "step": 0,
+        "ratio_mean": 1.0119818449020386,
+        "ratio_std": 0.5337115526199341,
+        "abs_log_ratio_mean": 0.06620997190475464,
+        "unclipped_surrogate": 0.00027960704755969346,
+        "clip_fraction": 0.021102791652083397,
+        "affected_token_fraction": 0.010097571648657322,
+        "clipped_surrogate": -0.005374318454414606,
+        "surrogate_gap": 0.005653925705701113
+      },
+      {
+        "step": 1,
+        "ratio_mean": 1.0119540691375732,
+        "ratio_std": 0.5336425304412842,
+        "abs_log_ratio_mean": 0.06622634083032608,
+        "unclipped_surrogate": 0.00037384661845862865,
+        "clip_fraction": 0.020875878632068634,
+        "affected_token_fraction": 0.010097571648657322,
+        "clipped_surrogate": -0.005279884673655033,
+        "surrogate_gap": 0.005653731524944305
+      },
+      {
+        "step": 2,
+        "ratio_mean": 1.0119733810424805,
+        "ratio_std": 0.5335148572921753,
+        "abs_log_ratio_mean": 0.06620083004236221,
+        "unclipped_surrogate": 0.00041518008220009506,
+        "clip_fraction": 0.02098933607339859,
+        "affected_token_fraction": 0.010097571648657322,
+        "clipped_surrogate": -0.005246681161224842,
+        "surrogate_gap": 0.005661861039698124
+      },
+      {
+        "step": 3,
+        "ratio_mean": 1.012026309967041,
+        "ratio_std": 0.5335992574691772,
+        "abs_log_ratio_mean": 0.06628017127513885,
+        "unclipped_surrogate": 0.0004184922727290541,
+        "clip_fraction": 0.02064896747469902,
+        "affected_token_fraction": 0.009870660491287708,
+        "clipped_surrogate": -0.005248633213341236,
+        "surrogate_gap": 0.005667125340551138
+      },
+      {
+        "step": 4,
+        "ratio_mean": 1.0120247602462769,
+        "ratio_std": 0.5333977341651917,
+        "abs_log_ratio_mean": 0.06621956080198288,
+        "unclipped_surrogate": 0.0004613228084053844,
+        "clip_fraction": 0.021102791652083397,
+        "affected_token_fraction": 0.010097571648657322,
+        "clipped_surrogate": -0.0051966034807264805,
+        "surrogate_gap": 0.0056579262018203735
+      }
+    ]
+  }
+}

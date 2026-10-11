@@ -1,0 +1,404 @@
+{
+  "kl_beta0": {
+    "kl_beta": 0.0,
+    "heldout": {
+      "n_prompts": 64,
+      "reward": {
+        "mean": 1.5601348876953125,
+        "std": 1.382011125381258,
+        "n": 64
+      },
+      "kl_token_mean": -5.076985311626041e-07,
+      "kl_seq_mean": -0.00016147193127835635,
+      "kl_seq_std": 0.07939473686608751,
+      "sample_entropy": 0.7298296838853275,
+      "full_entropy": 0.9516476968759868,
+      "response_length": {
+        "mean": 318.046875,
+        "std": 265.69716253233565,
+        "median": 332.0,
+        "iqr": 445.5,
+        "min": 2.0,
+        "max": 768.0,
+        "n": 64
+      },
+      "truncated_fraction": 0.109375,
+      "decoding": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "do_sample": true,
+        "max_new_tokens": 768,
+        "seed": 6304
+      },
+      "adapter": "outputs/task2_ppo/kl_beta0"
+    },
+    "train_summary": {
+      "run_name": "kl_beta0",
+      "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task2_ppo/kl_beta0",
+      "updates": 8,
+      "clip_epsilon": 0.2,
+      "kl_beta": 0.0,
+      "ppo_epochs": 2,
+      "prompts_per_update": 1,
+      "policy_learning_rate": 3e-06,
+      "max_response_length": 512,
+      "seed": 6304,
+      "generated_tokens_total": 1206,
+      "wall_clock_s": 67.55878432999998,
+      "peak_vram_gb": 7.1112470626831055,
+      "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/train_kl_beta0_log.jsonl"
+    },
+    "stability": {
+      "policy_grad_norm_mean": 0.6717341132282403,
+      "policy_grad_norm_std": 0.6631474436882213,
+      "policy_grad_norm_max": 2.2709636593883937,
+      "approx_kl_old_mean": 4.858621828418563e-06,
+      "approx_kl_old_max": 1.1841947525681462e-05,
+      "ratio_max_overall": 1.0094316005706787,
+      "clip_fraction_mean": 0.0,
+      "reward_std_over_updates": 1.071234852279675,
+      "kl_ref_increase": 0.0005124750314280391,
+      "value_loss_mean": 6.469257298856974
+    },
+    "trajectory": {
+      "reward_raw_mean": [
+        2.169921875,
+        0.9482421875,
+        2.283203125,
+        -0.10382080078125,
+        -0.235595703125,
+        1.6982421875,
+        -0.75146484375,
+        0.8056640625
+      ],
+      "kl_ref_token": [
+        -0.0002509278419893235,
+        0.0016895862063392997,
+        0.00013176359061617404,
+        0.0003790698538068682,
+        0.00018505632760934532,
+        0.001549874315969646,
+        0.0005801613442599773,
+        0.0002615471894387156
+      ],
+      "entropy": [
+        0.8013040572404861,
+        0.8437175750732422,
+        1.1664084004614637,
+        0.9171048845563616,
+        0.1958267092704773,
+        0.9006967226664225,
+        1.072245575660883,
+        1.448349441612623
+      ],
+      "response_length": [
+        512.0,
+        5.0,
+        193.0,
+        210.0,
+        4.0,
+        15.0,
+        86.0,
+        181.0
+      ],
+      "value_loss": [
+        4.923073768615723,
+        13.72212266921997,
+        5.983713388442993,
+        3.580114960670471,
+        0.592313677072525,
+        13.908827781677246,
+        3.970257043838501,
+        5.073635101318359
+      ],
+      "clip_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "policy_grad_norm": [
+        0.26331744751593233,
+        0.5545773885937306,
+        0.36724601848741667,
+        0.3525155232257737,
+        0.22507716713044246,
+        2.2709636593883937,
+        1.1093656036455088,
+        0.23081009783872386
+      ]
+    }
+  },
+  "kl_beta0p1": {
+    "kl_beta": 0.1,
+    "heldout": {
+      "n_prompts": 64,
+      "reward": {
+        "mean": 1.2217884063720703,
+        "std": 2.067702323565613,
+        "n": 64
+      },
+      "kl_token_mean": -3.822582135281075e-05,
+      "kl_seq_mean": -0.011710838738508755,
+      "kl_seq_std": 0.09377499414550831,
+      "sample_entropy": 0.7340248625114327,
+      "full_entropy": 0.9346764454414735,
+      "response_length": {
+        "mean": 306.359375,
+        "std": 281.8176697345455,
+        "median": 217.0,
+        "iqr": 500.0,
+        "min": 2.0,
+        "max": 768.0,
+        "n": 64
+      },
+      "truncated_fraction": 0.171875,
+      "decoding": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "do_sample": true,
+        "max_new_tokens": 768,
+        "seed": 6304
+      },
+      "adapter": "outputs/task2_ppo/kl_beta0p1"
+    },
+    "train_summary": {
+      "run_name": "kl_beta0p1",
+      "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task2_ppo/kl_beta0p1",
+      "updates": 8,
+      "clip_epsilon": 0.2,
+      "kl_beta": 0.1,
+      "ppo_epochs": 2,
+      "prompts_per_update": 1,
+      "policy_learning_rate": 3e-06,
+      "max_response_length": 512,
+      "seed": 6304,
+      "generated_tokens_total": 1103,
+      "wall_clock_s": 67.13463815299929,
+      "peak_vram_gb": 7.106949329376221,
+      "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/train_kl_beta0p1_log.jsonl"
+    },
+    "stability": {
+      "policy_grad_norm_mean": 0.6986358613432767,
+      "policy_grad_norm_std": 0.6612354010573591,
+      "policy_grad_norm_max": 2.351399201840863,
+      "approx_kl_old_mean": 3.734037896663267e-06,
+      "approx_kl_old_max": 7.817287951183971e-06,
+      "ratio_max_overall": 1.0151441097259521,
+      "clip_fraction_mean": 0.0,
+      "reward_std_over_updates": 1.0225325539291403,
+      "kl_ref_increase": 0.00028905713770654984,
+      "value_loss_mean": 5.389557536691427
+    },
+    "trajectory": {
+      "reward_raw_mean": [
+        2.169921875,
+        0.9482421875,
+        0.99560546875,
+        -1.35546875,
+        -0.235595703125,
+        0.60205078125,
+        -0.17626953125,
+        1.3291015625
+      ],
+      "kl_ref_token": [
+        -0.0002509278419893235,
+        -0.0010616873623803258,
+        -0.00047265796456485987,
+        0.0006315364735201001,
+        0.0005019077216275036,
+        -0.0008755423477850854,
+        -0.001075359177775681,
+        3.812929571722634e-05
+      ],
+      "entropy": [
+        0.8011977151036263,
+        0.843871021270752,
+        1.0593017798203688,
+        0.37187341543344354,
+        0.19402296096086502,
+        0.7502804902883676,
+        0.756392829025848,
+        1.178467299221965
+      ],
+      "response_length": [
+        512.0,
+        5.0,
+        208.0,
+        39.0,
+        4.0,
+        13.0,
+        79.0,
+        243.0
+      ],
+      "value_loss": [
+        4.923695802688599,
+        13.716826438903809,
+        5.061323881149292,
+        2.6291860342025757,
+        0.52923783659935,
+        6.527182340621948,
+        5.30830454826355,
+        4.420703411102295
+      ],
+      "clip_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "policy_grad_norm": [
+        0.26344761857113286,
+        0.5451032250922596,
+        0.3500953130038804,
+        0.8180012122458067,
+        0.25442348707588014,
+        2.351399201840863,
+        0.7715540617370149,
+        0.235062771179376
+      ]
+    }
+  },
+  "kl_beta0p2": {
+    "kl_beta": 0.2,
+    "heldout": {
+      "n_prompts": 64,
+      "reward": {
+        "mean": 1.5707981586456299,
+        "std": 1.2989537400491427,
+        "n": 64
+      },
+      "kl_token_mean": -1.8882886950310475e-06,
+      "kl_seq_mean": -0.0005703812039428158,
+      "kl_seq_std": 0.07574213176298543,
+      "sample_entropy": 0.7334985376000986,
+      "full_entropy": 0.9388652389539163,
+      "response_length": {
+        "mean": 302.0625,
+        "std": 273.9343486015399,
+        "median": 203.5,
+        "iqr": 383.25,
+        "min": 2.0,
+        "max": 768.0,
+        "n": 64
+      },
+      "truncated_fraction": 0.15625,
+      "decoding": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "do_sample": true,
+        "max_new_tokens": 768,
+        "seed": 6304
+      },
+      "adapter": "outputs/task2_ppo/kl_beta0p2"
+    },
+    "train_summary": {
+      "run_name": "kl_beta0p2",
+      "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task2_ppo/kl_beta0p2",
+      "updates": 8,
+      "clip_epsilon": 0.2,
+      "kl_beta": 0.2,
+      "ppo_epochs": 2,
+      "prompts_per_update": 1,
+      "policy_learning_rate": 3e-06,
+      "max_response_length": 512,
+      "seed": 6304,
+      "generated_tokens_total": 1108,
+      "wall_clock_s": 67.07006684099997,
+      "peak_vram_gb": 7.106949329376221,
+      "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/train_kl_beta0p2_log.jsonl"
+    },
+    "stability": {
+      "policy_grad_norm_mean": 0.774426604259578,
+      "policy_grad_norm_std": 0.7299203381569411,
+      "policy_grad_norm_max": 2.552060743572203,
+      "approx_kl_old_mean": 6.1439854874834054e-06,
+      "approx_kl_old_max": 1.66381178132724e-05,
+      "ratio_max_overall": 1.0147619247436523,
+      "clip_fraction_mean": 0.0,
+      "reward_std_over_updates": 1.0428078769349016,
+      "kl_ref_increase": -0.00020741746993735433,
+      "value_loss_mean": 6.3749607764184475
+    },
+    "trajectory": {
+      "reward_raw_mean": [
+        2.169921875,
+        0.9482421875,
+        1.5224609375,
+        0.9853515625,
+        -0.235595703125,
+        0.5888671875,
+        -1.318359375,
+        1.6015625
+      ],
+      "kl_ref_token": [
+        -0.0002509278419893235,
+        -0.0006525070057250559,
+        0.00025253702187910676,
+        5.414664701675065e-05,
+        0.00022087912657298148,
+        0.003037620335817337,
+        0.0005514808581210673,
+        -0.0004583453119266778
+      ],
+      "entropy": [
+        0.8012433424592018,
+        0.8440465450286865,
+        1.1893063517450129,
+        0.7134095668792725,
+        0.19512099027633667,
+        1.0769200325012207,
+        0.5316233533494016,
+        1.1966542389433263
+      ],
+      "response_length": [
+        512.0,
+        5.0,
+        206.0,
+        200.0,
+        4.0,
+        16.0,
+        47.0,
+        118.0
+      ],
+      "value_loss": [
+        4.924184322357178,
+        13.727334976196289,
+        5.329086065292358,
+        3.607168197631836,
+        0.604514092206955,
+        10.98879623413086,
+        5.085370302200317,
+        6.733232021331787
+      ],
+      "clip_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "policy_grad_norm": [
+        0.2630192569792411,
+        0.5713232896735267,
+        0.35750655062523384,
+        0.6797973278134666,
+        0.2311508973285822,
+        2.552060743572203,
+        1.1712375311028875,
+        0.36931723698148244
+      ]
+    }
+  }
+}

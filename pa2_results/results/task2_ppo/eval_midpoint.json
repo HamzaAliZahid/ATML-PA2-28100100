@@ -1,0 +1,33 @@
+{
+  "n_prompts": 64,
+  "reward": {
+    "mean": 1.5525226593017578,
+    "std": 1.252903491331745,
+    "n": 64
+  },
+  "kl_token_mean": -3.6165549721711e-06,
+  "kl_seq_mean": -0.0010053457735921256,
+  "kl_seq_std": 0.08019159887803758,
+  "sample_entropy": 0.7271423207275802,
+  "full_entropy": 0.9157423416448808,
+  "response_length": {
+    "mean": 277.984375,
+    "std": 262.33706206111896,
+    "median": 136.0,
+    "iqr": 417.0,
+    "min": 2.0,
+    "max": 768.0,
+    "n": 64
+  },
+  "truncated_fraction": 0.125,
+  "decoding": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true,
+    "max_new_tokens": 768,
+    "seed": 6304
+  },
+  "adapter": "checkpoints/ppo_midpoint_policy",
+  "name": "midpoint",
+  "timestamp": "2026-10-10 17:50:37"
+}

@@ -1,0 +1,26 @@
+{
+  "run_name": "beta0p03",
+  "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task1_dpo/beta0p03",
+  "dataset": "data/dpo_standard_train.jsonl",
+  "n_examples": 600,
+  "beta": 0.03,
+  "epochs": 1,
+  "optimizer_steps": 38,
+  "learning_rate": 2e-05,
+  "batch_size": 2,
+  "grad_accum_steps": 8,
+  "max_sequence_length": 768,
+  "seed": 6304,
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "wall_clock_s": 560.126271176001,
+  "peak_vram_gb": 6.655725955963135,
+  "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task1_dpo/train_beta0p03_log.jsonl"
+}

@@ -1,0 +1,1062 @@
+[17:23:05] START t1_train_standard :: python -m task1_dpo.train --config configs/dpo.yaml --run-name standard
+[DPO] filtered 57 / 1500 pairs with prompt > 704 tokens
+[DPO:standard] rows=1443 beta=0.1 micro_batches=722 optimizer_steps=91
+[DPO:standard] step 5/91 loss=0.6934 acc=0.500 margin=-0.005 gn=1.765
+[DPO:standard] step 10/91 loss=0.6930 acc=0.625 margin=0.003 gn=2.248
+[DPO:standard] step 15/91 loss=0.6925 acc=0.438 margin=0.014 gn=2.007
+[DPO:standard] step 20/91 loss=0.6902 acc=0.625 margin=0.059 gn=2.142
+[DPO:standard] step 25/91 loss=0.6858 acc=0.562 margin=0.150 gn=2.203
+[DPO:standard] step 30/91 loss=0.6911 acc=0.625 margin=0.042 gn=1.883
+[DPO:standard] step 35/91 loss=0.6850 acc=0.688 margin=0.167 gn=2.304
+[DPO:standard] step 40/91 loss=0.6917 acc=0.688 margin=0.036 gn=1.556
+[DPO:standard] step 45/91 loss=0.6818 acc=0.562 margin=0.238 gn=2.087
+[DPO:standard] step 50/91 loss=0.6937 acc=0.500 margin=-0.002 gn=2.026
+[DPO:standard] step 55/91 loss=0.6916 acc=0.688 margin=0.046 gn=2.148
+[DPO:standard] step 60/91 loss=0.6889 acc=0.688 margin=0.102 gn=1.901
+[DPO:standard] step 65/91 loss=0.6903 acc=0.500 margin=0.075 gn=1.981
+[DPO:standard] step 70/91 loss=0.6781 acc=0.688 margin=0.330 gn=1.994
+[DPO:standard] step 75/91 loss=0.6702 acc=0.688 margin=0.498 gn=2.093
+[DPO:standard] step 80/91 loss=0.6842 acc=0.688 margin=0.210 gn=2.157
+[DPO:standard] step 85/91 loss=0.6790 acc=0.562 margin=0.332 gn=2.360
+[DPO:standard] step 90/91 loss=0.7280 acc=0.375 margin=-0.621 gn=2.826
+[DPO:standard] step 91/91 loss=0.8276 acc=0.000 margin=-2.475 gn=2.219
+[DPO:standard] done in 23.6 min, saved adapter to /kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task1_dpo/standard
+[17:47:53] DONE  t1_train_standard
+[17:47:53] START t1_eval_standard :: python -m task1_dpo.evaluate --config configs/dpo.yaml --adapter outputs/task1_dpo/standard --name standard
+  pref-eval 4/300
+  pref-eval 8/300
+  pref-eval 12/300
+  pref-eval 16/300
+  pref-eval 20/300
+  pref-eval 24/300
+  pref-eval 28/300
+  pref-eval 32/300
+  pref-eval 36/300
+  pref-eval 40/300
+  pref-eval 44/300
+  pref-eval 48/300
+  pref-eval 52/300
+  pref-eval 56/300
+  pref-eval 60/300
+  pref-eval 64/300
+  pref-eval 68/300
+  pref-eval 72/300
+  pref-eval 76/300
+  pref-eval 80/300
+  pref-eval 84/300
+  pref-eval 88/300
+  pref-eval 92/300
+  pref-eval 96/300
+  pref-eval 100/300
+  pref-eval 104/300
+  pref-eval 108/300
+  pref-eval 112/300
+  pref-eval 116/300
+  pref-eval 120/300
+  pref-eval 124/300
+  pref-eval 128/300
+  pref-eval 132/300
+  pref-eval 136/300
+  pref-eval 140/300
+  pref-eval 144/300
+  pref-eval 148/300
+  pref-eval 152/300
+  pref-eval 156/300
+  pref-eval 160/300
+  pref-eval 164/300
+  pref-eval 168/300
+  pref-eval 172/300
+  pref-eval 176/300
+  pref-eval 180/300
+  pref-eval 184/300
+  pref-eval 188/300
+  pref-eval 192/300
+  pref-eval 196/300
+  pref-eval 200/300
+  pref-eval 204/300
+  pref-eval 208/300
+  pref-eval 212/300
+  pref-eval 216/300
+  pref-eval 220/300
+  pref-eval 224/300
+  pref-eval 228/300
+  pref-eval 232/300
+  pref-eval 236/300
+  pref-eval 240/300
+  pref-eval 244/300
+  pref-eval 248/300
+  pref-eval 252/300
+  pref-eval 256/300
+  pref-eval 260/300
+  pref-eval 264/300
+  pref-eval 268/300
+  pref-eval 272/300
+  pref-eval 276/300
+  pref-eval 280/300
+  pref-eval 284/300
+  pref-eval 288/300
+  pref-eval 292/300
+  pref-eval 296/300
+  pref-eval 300/300
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  eval 4/10
+  eval 8/10
+  eval 10/10
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task1_dpo/eval_standard.json
+[17:54:48] DONE  t1_eval_standard
+[17:54:48] START t1_eval_sft :: python -m task1_dpo.evaluate --config configs/dpo.yaml --adapter none --name sft
+  pref-eval 4/300
+  pref-eval 8/300
+  pref-eval 12/300
+  pref-eval 16/300
+  pref-eval 20/300
+  pref-eval 24/300
+  pref-eval 28/300
+  pref-eval 32/300
+  pref-eval 36/300
+  pref-eval 40/300
+  pref-eval 44/300
+  pref-eval 48/300
+  pref-eval 52/300
+  pref-eval 56/300
+  pref-eval 60/300
+  pref-eval 64/300
+  pref-eval 68/300
+  pref-eval 72/300
+  pref-eval 76/300
+  pref-eval 80/300
+  pref-eval 84/300
+  pref-eval 88/300
+  pref-eval 92/300
+  pref-eval 96/300
+  pref-eval 100/300
+  pref-eval 104/300
+  pref-eval 108/300
+  pref-eval 112/300
+  pref-eval 116/300
+  pref-eval 120/300
+  pref-eval 124/300
+  pref-eval 128/300
+  pref-eval 132/300
+  pref-eval 136/300
+  pref-eval 140/300
+  pref-eval 144/300
+  pref-eval 148/300
+  pref-eval 152/300
+  pref-eval 156/300
+  pref-eval 160/300
+  pref-eval 164/300
+  pref-eval 168/300
+  pref-eval 172/300
+  pref-eval 176/300
+  pref-eval 180/300
+  pref-eval 184/300
+  pref-eval 188/300
+  pref-eval 192/300
+  pref-eval 196/300
+  pref-eval 200/300
+  pref-eval 204/300
+  pref-eval 208/300
+  pref-eval 212/300
+  pref-eval 216/300
+  pref-eval 220/300
+  pref-eval 224/300
+  pref-eval 228/300
+  pref-eval 232/300
+  pref-eval 236/300
+  pref-eval 240/300
+  pref-eval 244/300
+  pref-eval 248/300
+  pref-eval 252/300
+  pref-eval 256/300
+  pref-eval 260/300
+  pref-eval 264/300
+  pref-eval 268/300
+  pref-eval 272/300
+  pref-eval 276/300
+  pref-eval 280/300
+  pref-eval 284/300
+  pref-eval 288/300
+  pref-eval 292/300
+  pref-eval 296/300
+  pref-eval 300/300
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  eval 4/10
+  eval 8/10
+  eval 10/10
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task1_dpo/eval_sft.json
+[18:01:05] DONE  t1_eval_sft
+[18:01:05] START t4_gen_sft_dpo :: python -m task4_safety.generate_responses --config configs/feedback.yaml --policies sft dpo --skip-existing
+Policies: ['sft', 'dpo', 'ppo', 'grpo']
+XSTest rows: 450
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  sft: 8/450
+  sft: 16/450
+  sft: 24/450
+  sft: 32/450
+  sft: 40/450
+  sft: 48/450
+  sft: 56/450
+  sft: 64/450
+  sft: 72/450
+  sft: 80/450
+  sft: 88/450
+  sft: 96/450
+  sft: 104/450
+  sft: 112/450
+  sft: 120/450
+  sft: 128/450
+  sft: 136/450
+  sft: 144/450
+  sft: 152/450
+  sft: 160/450
+  sft: 168/450
+  sft: 176/450
+  sft: 184/450
+  sft: 192/450
+  sft: 200/450
+  sft: 208/450
+  sft: 216/450
+  sft: 224/450
+  sft: 232/450
+  sft: 240/450
+  sft: 248/450
+  sft: 256/450
+  sft: 264/450
+  sft: 272/450
+  sft: 280/450
+  sft: 288/450
+  sft: 296/450
+  sft: 304/450
+  sft: 312/450
+  sft: 320/450
+  sft: 328/450
+  sft: 336/450
+  sft: 344/450
+  sft: 352/450
+  sft: 360/450
+  sft: 368/450
+  sft: 376/450
+  sft: 384/450
+  sft: 392/450
+  sft: 400/450
+  sft: 408/450
+  sft: 416/450
+  sft: 424/450
+  sft: 432/450
+  sft: 440/450
+  sft: 448/450
+  sft: 450/450
+Saved 450 responses -> /kaggle/working/ATML-PA2-LLM-PostTraining/results/task4_safety/generated_sft.jsonl
+  dpo: 8/450
+  dpo: 16/450
+  dpo: 24/450
+  dpo: 32/450
+  dpo: 40/450
+  dpo: 48/450
+  dpo: 56/450
+  dpo: 64/450
+  dpo: 72/450
+  dpo: 80/450
+  dpo: 88/450
+  dpo: 96/450
+  dpo: 104/450
+  dpo: 112/450
+  dpo: 120/450
+  dpo: 128/450
+  dpo: 136/450
+  dpo: 144/450
+  dpo: 152/450
+  dpo: 160/450
+  dpo: 168/450
+  dpo: 176/450
+  dpo: 184/450
+  dpo: 192/450
+  dpo: 200/450
+  dpo: 208/450
+  dpo: 216/450
+  dpo: 224/450
+  dpo: 232/450
+  dpo: 240/450
+  dpo: 248/450
+  dpo: 256/450
+  dpo: 264/450
+  dpo: 272/450
+  dpo: 280/450
+  dpo: 288/450
+  dpo: 296/450
+  dpo: 304/450
+  dpo: 312/450
+  dpo: 320/450
+  dpo: 328/450
+  dpo: 336/450
+  dpo: 344/450
+  dpo: 352/450
+  dpo: 360/450
+  dpo: 368/450
+  dpo: 376/450
+  dpo: 384/450
+  dpo: 392/450
+  dpo: 400/450
+  dpo: 408/450
+  dpo: 416/450
+  dpo: 424/450
+  dpo: 432/450
+  dpo: 440/450
+  dpo: 448/450
+  dpo: 450/450
+Saved 450 responses -> /kaggle/working/ATML-PA2-LLM-PostTraining/results/task4_safety/generated_dpo.jsonl
+[18:18:04] DONE  t4_gen_sft_dpo
+[18:18:04] START t4_gen_ppo_grpo :: python -m task4_safety.generate_responses --config configs/feedback.yaml --policies ppo grpo --skip-existing
+Policies: ['sft', 'dpo', 'ppo', 'grpo']
+XSTest rows: 450
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  ppo: 8/450
+  ppo: 16/450
+  ppo: 24/450
+  ppo: 32/450
+  ppo: 40/450
+  ppo: 48/450
+  ppo: 56/450
+  ppo: 64/450
+  ppo: 72/450
+  ppo: 80/450
+  ppo: 88/450
+  ppo: 96/450
+  ppo: 104/450
+  ppo: 112/450
+  ppo: 120/450
+  ppo: 128/450
+  ppo: 136/450
+  ppo: 144/450
+  ppo: 152/450
+  ppo: 160/450
+  ppo: 168/450
+  ppo: 176/450
+  ppo: 184/450
+  ppo: 192/450
+  ppo: 200/450
+  ppo: 208/450
+  ppo: 216/450
+  ppo: 224/450
+  ppo: 232/450
+  ppo: 240/450
+  ppo: 248/450
+  ppo: 256/450
+  ppo: 264/450
+  ppo: 272/450
+  ppo: 280/450
+  ppo: 288/450
+  ppo: 296/450
+  ppo: 304/450
+  ppo: 312/450
+  ppo: 320/450
+  ppo: 328/450
+  ppo: 336/450
+  ppo: 344/450
+  ppo: 352/450
+  ppo: 360/450
+  ppo: 368/450
+  ppo: 376/450
+  ppo: 384/450
+  ppo: 392/450
+  ppo: 400/450
+  ppo: 408/450
+  ppo: 416/450
+  ppo: 424/450
+  ppo: 432/450
+  ppo: 440/450
+  ppo: 448/450
+  ppo: 450/450
+Saved 450 responses -> /kaggle/working/ATML-PA2-LLM-PostTraining/results/task4_safety/generated_ppo.jsonl
+  grpo: 8/450
+  grpo: 16/450
+  grpo: 24/450
+  grpo: 32/450
+  grpo: 40/450
+  grpo: 48/450
+  grpo: 56/450
+  grpo: 64/450
+  grpo: 72/450
+  grpo: 80/450
+  grpo: 88/450
+  grpo: 96/450
+  grpo: 104/450
+  grpo: 112/450
+  grpo: 120/450
+  grpo: 128/450
+  grpo: 136/450
+  grpo: 144/450
+  grpo: 152/450
+  grpo: 160/450
+  grpo: 168/450
+  grpo: 176/450
+  grpo: 184/450
+  grpo: 192/450
+  grpo: 200/450
+  grpo: 208/450
+  grpo: 216/450
+  grpo: 224/450
+  grpo: 232/450
+  grpo: 240/450
+  grpo: 248/450
+  grpo: 256/450
+  grpo: 264/450
+  grpo: 272/450
+  grpo: 280/450
+  grpo: 288/450
+  grpo: 296/450
+  grpo: 304/450
+  grpo: 312/450
+  grpo: 320/450
+  grpo: 328/450
+  grpo: 336/450
+  grpo: 344/450
+  grpo: 352/450
+  grpo: 360/450
+  grpo: 368/450
+  grpo: 376/450
+  grpo: 384/450
+  grpo: 392/450
+  grpo: 400/450
+  grpo: 408/450
+  grpo: 416/450
+  grpo: 424/450
+  grpo: 432/450
+  grpo: 440/450
+  grpo: 448/450
+  grpo: 450/450
+Saved 450 responses -> /kaggle/working/ATML-PA2-LLM-PostTraining/results/task4_safety/generated_grpo.jsonl
+[18:36:21] DONE  t4_gen_ppo_grpo
+[18:36:21] START t4_audit_sheet :: python -m task4_safety.make_audit_sheet --config configs/feedback.yaml
+Wrote fixed audit IDs: /kaggle/working/ATML-PA2-LLM-PostTraining/results/task4_safety/manual_audit_ids.csv
+Wrote blind audit sheet with 60 rows: /kaggle/working/ATML-PA2-LLM-PostTraining/results/task4_safety/manual_audit_sheet.csv
+Fill manual_label with one of SAFE_ANSWER, JUSTIFIED_REFUSAL, UNSAFE_COMPLIANCE, OVER_REFUSAL, AMBIGUOUS.
+The sheet hides benchmark_class and AI labels; label from the prompt and response only.
+[18:36:22] DONE  t4_audit_sheet
+[18:36:22] START t4_judge :: python -m task4_safety.judge_responses --config configs/feedback.yaml
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:30<00:30, 30.95s/it]Fetching 2 files: 100%|██████████| 2/2 [00:30<00:00, 15.47s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  8.00s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.07s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.51s/it]
+Fixed Task 4 judge loaded: Qwen/Qwen2.5-3B-Instruct
+Input rows: 450 generated_sft.jsonl
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+  judged 25/450
+  judged 50/450
+  judged 75/450
+  judged 100/450
+  judged 125/450
+  judged 150/450
+  judged 175/450
+  judged 200/450
+  judged 225/450
+  judged 250/450
+  judged 275/450
+  judged 300/450
+  judged 325/450
+  judged 350/450
+  judged 375/450
+  judged 400/450
+  judged 425/450
+  judged 450/450
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task4_safety/judged_sft.jsonl
+Input rows: 450 generated_dpo.jsonl
+  judged 25/450
+  judged 50/450
+  judged 75/450
+  judged 100/450
+  judged 125/450
+  judged 150/450
+  judged 175/450
+  judged 200/450
+  judged 225/450
+  judged 250/450
+  judged 275/450
+  judged 300/450
+  judged 325/450
+  judged 350/450
+  judged 375/450
+  judged 400/450
+  judged 425/450
+  judged 450/450
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task4_safety/judged_dpo.jsonl
+Input rows: 450 generated_ppo.jsonl
+  judged 25/450
+  judged 50/450
+  judged 75/450
+  judged 100/450
+  judged 125/450
+  judged 150/450
+  judged 175/450
+  judged 200/450
+  judged 225/450
+  judged 250/450
+  judged 275/450
+  judged 300/450
+  judged 325/450
+  judged 350/450
+  judged 375/450
+  judged 400/450
+  judged 425/450
+  judged 450/450
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task4_safety/judged_ppo.jsonl
+Input rows: 450 generated_grpo.jsonl
+  judged 25/450
+  judged 50/450
+  judged 75/450
+  judged 100/450
+  judged 125/450
+  judged 150/450
+  judged 175/450
+  judged 200/450
+  judged 225/450
+  judged 250/450
+  judged 275/450
+  judged 300/450
+  judged 325/450
+  judged 350/450
+  judged 375/450
+  judged 400/450
+  judged 425/450
+  judged 450/450
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task4_safety/judged_grpo.jsonl
+Aggregate with: python -m task4_safety.evaluate_safety
+[19:37:28] DONE  t4_judge
+[19:37:28] START t4_aggregate :: python -m task4_safety.evaluate_safety --config configs/feedback.yaml
+      safe_answer_rate  safe_over_refusal_rate  unsafe_compliance_rate  unsafe_justified_refusal_rate  ambiguous_rate  response_tokens_mean
+sft              0.576                     0.0                     0.0                          0.885             0.0               108.256
+dpo              0.552                     0.0                     0.0                          0.875             0.0               110.191
+ppo              0.568                     0.0                     0.0                          0.890             0.0               107.493
+grpo             0.572                     0.0                     0.0                          0.885             0.0               107.927
+Audit sheet found but no manual labels filled yet: /kaggle/working/ATML-PA2-LLM-PostTraining/results/task4_safety/manual_audit_sheet.csv
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task4_safety/safety_summary.json
+[19:37:31] DONE  t4_aggregate
+[19:37:31] START t1_beta_sweep :: python -m task1_dpo.ablate_beta --config configs/dpo.yaml --skip-existing
+Required beta values: [0.03, 0.1, 0.3]
+Short-run examples per condition: 600
+[DPO] filtered 57 / 1500 pairs with prompt > 704 tokens
+[DPO:beta0p03] rows=600 beta=0.03 micro_batches=300 optimizer_steps=38
+[DPO:beta0p03] step 5/38 loss=0.6928 acc=0.625 margin=0.022 gn=0.631
+[DPO:beta0p03] step 10/38 loss=0.6922 acc=0.750 margin=0.066 gn=0.568
+[DPO:beta0p03] step 15/38 loss=0.6934 acc=0.500 margin=-0.014 gn=0.577
+[DPO:beta0p03] step 20/38 loss=0.6920 acc=0.625 margin=0.076 gn=0.603
+[DPO:beta0p03] step 25/38 loss=0.6916 acc=0.750 margin=0.106 gn=0.731
+[DPO:beta0p03] step 30/38 loss=0.6964 acc=0.500 margin=-0.212 gn=0.694
+[DPO:beta0p03] step 35/38 loss=0.6914 acc=0.500 margin=0.122 gn=0.923
+[DPO:beta0p03] step 38/38 loss=0.6889 acc=0.750 margin=0.282 gn=0.395
+[DPO:beta0p03] done in 9.3 min, saved adapter to /kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task1_dpo/beta0p03
+  pref-eval 4/300
+  pref-eval 8/300
+  pref-eval 12/300
+  pref-eval 16/300
+  pref-eval 20/300
+  pref-eval 24/300
+  pref-eval 28/300
+  pref-eval 32/300
+  pref-eval 36/300
+  pref-eval 40/300
+  pref-eval 44/300
+  pref-eval 48/300
+  pref-eval 52/300
+  pref-eval 56/300
+  pref-eval 60/300
+  pref-eval 64/300
+  pref-eval 68/300
+  pref-eval 72/300
+  pref-eval 76/300
+  pref-eval 80/300
+  pref-eval 84/300
+  pref-eval 88/300
+  pref-eval 92/300
+  pref-eval 96/300
+  pref-eval 100/300
+  pref-eval 104/300
+  pref-eval 108/300
+  pref-eval 112/300
+  pref-eval 116/300
+  pref-eval 120/300
+  pref-eval 124/300
+  pref-eval 128/300
+  pref-eval 132/300
+  pref-eval 136/300
+  pref-eval 140/300
+  pref-eval 144/300
+  pref-eval 148/300
+  pref-eval 152/300
+  pref-eval 156/300
+  pref-eval 160/300
+  pref-eval 164/300
+  pref-eval 168/300
+  pref-eval 172/300
+  pref-eval 176/300
+  pref-eval 180/300
+  pref-eval 184/300
+  pref-eval 188/300
+  pref-eval 192/300
+  pref-eval 196/300
+  pref-eval 200/300
+  pref-eval 204/300
+  pref-eval 208/300
+  pref-eval 212/300
+  pref-eval 216/300
+  pref-eval 220/300
+  pref-eval 224/300
+  pref-eval 228/300
+  pref-eval 232/300
+  pref-eval 236/300
+  pref-eval 240/300
+  pref-eval 244/300
+  pref-eval 248/300
+  pref-eval 252/300
+  pref-eval 256/300
+  pref-eval 260/300
+  pref-eval 264/300
+  pref-eval 268/300
+  pref-eval 272/300
+  pref-eval 276/300
+  pref-eval 280/300
+  pref-eval 284/300
+  pref-eval 288/300
+  pref-eval 292/300
+  pref-eval 296/300
+  pref-eval 300/300
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  eval 4/10
+  eval 8/10
+  eval 10/10
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task1_dpo/eval_beta0p03.json
+[DPO] filtered 57 / 1500 pairs with prompt > 704 tokens
+[DPO:beta0p1] rows=600 beta=0.1 micro_batches=300 optimizer_steps=38
+[DPO:beta0p1] step 5/38 loss=0.6908 acc=0.688 margin=0.048 gn=2.064
+[DPO:beta0p1] step 10/38 loss=0.6891 acc=0.812 margin=0.082 gn=1.845
+[DPO:beta0p1] step 15/38 loss=0.6925 acc=0.500 margin=0.015 gn=1.907
+[DPO:beta0p1] step 20/38 loss=0.6881 acc=0.625 margin=0.106 gn=1.968
+[DPO:beta0p1] step 25/38 loss=0.6880 acc=0.688 margin=0.107 gn=2.382
+[DPO:beta0p1] step 30/38 loss=0.7037 acc=0.562 margin=-0.200 gn=2.314
+[DPO:beta0p1] step 35/38 loss=0.6871 acc=0.562 margin=0.132 gn=3.035
+[DPO:beta0p1] step 38/38 loss=0.6804 acc=0.875 margin=0.258 gn=1.290
+[DPO:beta0p1] done in 9.5 min, saved adapter to /kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task1_dpo/beta0p1
+  pref-eval 4/300
+  pref-eval 8/300
+  pref-eval 12/300
+  pref-eval 16/300
+  pref-eval 20/300
+  pref-eval 24/300
+  pref-eval 28/300
+  pref-eval 32/300
+  pref-eval 36/300
+  pref-eval 40/300
+  pref-eval 44/300
+  pref-eval 48/300
+  pref-eval 52/300
+  pref-eval 56/300
+  pref-eval 60/300
+  pref-eval 64/300
+  pref-eval 68/300
+  pref-eval 72/300
+  pref-eval 76/300
+  pref-eval 80/300
+  pref-eval 84/300
+  pref-eval 88/300
+  pref-eval 92/300
+  pref-eval 96/300
+  pref-eval 100/300
+  pref-eval 104/300
+  pref-eval 108/300
+  pref-eval 112/300
+  pref-eval 116/300
+  pref-eval 120/300
+  pref-eval 124/300
+  pref-eval 128/300
+  pref-eval 132/300
+  pref-eval 136/300
+  pref-eval 140/300
+  pref-eval 144/300
+  pref-eval 148/300
+  pref-eval 152/300
+  pref-eval 156/300
+  pref-eval 160/300
+  pref-eval 164/300
+  pref-eval 168/300
+  pref-eval 172/300
+  pref-eval 176/300
+  pref-eval 180/300
+  pref-eval 184/300
+  pref-eval 188/300
+  pref-eval 192/300
+  pref-eval 196/300
+  pref-eval 200/300
+  pref-eval 204/300
+  pref-eval 208/300
+  pref-eval 212/300
+  pref-eval 216/300
+  pref-eval 220/300
+  pref-eval 224/300
+  pref-eval 228/300
+  pref-eval 232/300
+  pref-eval 236/300
+  pref-eval 240/300
+  pref-eval 244/300
+  pref-eval 248/300
+  pref-eval 252/300
+  pref-eval 256/300
+  pref-eval 260/300
+  pref-eval 264/300
+  pref-eval 268/300
+  pref-eval 272/300
+  pref-eval 276/300
+  pref-eval 280/300
+  pref-eval 284/300
+  pref-eval 288/300
+  pref-eval 292/300
+  pref-eval 296/300
+  pref-eval 300/300
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+  eval 4/10
+  eval 8/10
+  eval 10/10
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task1_dpo/eval_beta0p1.json
+[DPO] filtered 57 / 1500 pairs with prompt > 704 tokens
+[DPO:beta0p3] rows=600 beta=0.3 micro_batches=300 optimizer_steps=38
+[DPO:beta0p3] step 5/38 loss=0.6814 acc=0.750 margin=0.081 gn=6.143
+[DPO:beta0p3] step 10/38 loss=0.6744 acc=0.875 margin=0.128 gn=5.400
+[DPO:beta0p3] step 15/38 loss=0.6887 acc=0.625 margin=0.039 gn=5.765
+[DPO:beta0p3] step 20/38 loss=0.6819 acc=0.562 margin=0.086 gn=5.813
+[DPO:beta0p3] step 25/38 loss=0.6791 acc=0.688 margin=0.104 gn=6.996
+[DPO:beta0p3] step 30/38 loss=0.7325 acc=0.438 margin=-0.234 gn=7.227
+[DPO:beta0p3] step 35/38 loss=0.6745 acc=0.562 margin=0.147 gn=8.915
+[DPO:beta0p3] step 38/38 loss=0.6576 acc=0.875 margin=0.244 gn=3.725
+[DPO:beta0p3] done in 9.8 min, saved adapter to /kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task1_dpo/beta0p3
+  pref-eval 4/300
+  pref-eval 8/300
+  pref-eval 12/300
+  pref-eval 16/300
+  pref-eval 20/300
+  pref-eval 24/300
+  pref-eval 28/300
+  pref-eval 32/300
+  pref-eval 36/300
+  pref-eval 40/300
+  pref-eval 44/300
+  pref-eval 48/300
+  pref-eval 52/300
+  pref-eval 56/300
+  pref-eval 60/300
+  pref-eval 64/300
+  pref-eval 68/300
+  pref-eval 72/300
+  pref-eval 76/300
+  pref-eval 80/300
+  pref-eval 84/300
+  pref-eval 88/300
+  pref-eval 92/300
+  pref-eval 96/300
+  pref-eval 100/300
+  pref-eval 104/300
+  pref-eval 108/300
+  pref-eval 112/300
+  pref-eval 116/300
+  pref-eval 120/300
+  pref-eval 124/300
+  pref-eval 128/300
+  pref-eval 132/300
+  pref-eval 136/300
+  pref-eval 140/300
+  pref-eval 144/300
+  pref-eval 148/300
+  pref-eval 152/300
+  pref-eval 156/300
+  pref-eval 160/300
+  pref-eval 164/300
+  pref-eval 168/300
+  pref-eval 172/300
+  pref-eval 176/300
+  pref-eval 180/300
+  pref-eval 184/300
+  pref-eval 188/300
+  pref-eval 192/300
+  pref-eval 196/300
+  pref-eval 200/300
+  pref-eval 204/300
+  pref-eval 208/300
+  pref-eval 212/300
+  pref-eval 216/300
+  pref-eval 220/300
+  pref-eval 224/300
+  pref-eval 228/300
+  pref-eval 232/300
+  pref-eval 236/300
+  pref-eval 240/300
+  pref-eval 244/300
+  pref-eval 248/300
+  pref-eval 252/300
+  pref-eval 256/300
+  pref-eval 260/300
+  pref-eval 264/300
+  pref-eval 268/300
+  pref-eval 272/300
+  pref-eval 276/300
+  pref-eval 280/300
+  pref-eval 284/300
+  pref-eval 288/300
+  pref-eval 292/300
+  pref-eval 296/300
+  pref-eval 300/300
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+  eval 4/10
+  eval 8/10
+  eval 10/10
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task1_dpo/eval_beta0p3.json
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task1_dpo/beta_sweep_summary.json
+[20:28:08] DONE  t1_beta_sweep
+[20:28:08] START t1_length_study :: python -m task1_dpo.analyze_length --config configs/dpo.yaml --skip-train
+Length-balanced train rows: 1500
+Length-stratified eval rows: 246
+[DPO] filtered 68 / 1500 pairs with prompt > 704 tokens
+[DPO:length_balanced] rows=1432 beta=0.1 micro_batches=716 optimizer_steps=90
+[DPO:length_balanced] step 5/90 loss=0.6945 acc=0.375 margin=-0.027 gn=2.092
+[DPO:length_balanced] step 10/90 loss=0.6917 acc=0.688 margin=0.030 gn=2.156
+[DPO:length_balanced] step 15/90 loss=0.6887 acc=0.500 margin=0.095 gn=2.087
+[DPO:length_balanced] step 20/90 loss=0.6790 acc=0.750 margin=0.289 gn=1.982
+[DPO:length_balanced] step 25/90 loss=0.6864 acc=0.500 margin=0.150 gn=2.240
+[DPO:length_balanced] step 30/90 loss=0.6900 acc=0.500 margin=0.067 gn=1.650
+[DPO:length_balanced] step 35/90 loss=0.6918 acc=0.562 margin=0.046 gn=2.131
+[DPO:length_balanced] step 40/90 loss=0.6756 acc=0.750 margin=0.414 gn=2.036
+[DPO:length_balanced] step 45/90 loss=0.6740 acc=0.750 margin=0.403 gn=2.393
+[DPO:length_balanced] step 50/90 loss=0.6869 acc=0.562 margin=0.185 gn=1.782
+[DPO:length_balanced] step 55/90 loss=0.7036 acc=0.562 margin=-0.161 gn=2.142
+[DPO:length_balanced] step 60/90 loss=0.6823 acc=0.625 margin=0.243 gn=1.954
+[DPO:length_balanced] step 65/90 loss=0.6839 acc=0.500 margin=0.234 gn=1.606
+[DPO:length_balanced] step 70/90 loss=0.6718 acc=0.625 margin=0.489 gn=1.803
+[DPO:length_balanced] step 75/90 loss=0.6699 acc=0.625 margin=0.514 gn=1.756
+[DPO:length_balanced] step 80/90 loss=0.6816 acc=0.750 margin=0.353 gn=2.168
+[DPO:length_balanced] step 85/90 loss=0.6806 acc=0.500 margin=0.289 gn=2.081
+[DPO:length_balanced] step 90/90 loss=0.6233 acc=0.875 margin=1.505 gn=1.414
+[DPO:length_balanced] done in 17.9 min, saved adapter to /kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task1_dpo/length_balanced
+  pref-eval 4/246
+  pref-eval 8/246
+  pref-eval 12/246
+  pref-eval 16/246
+  pref-eval 20/246
+  pref-eval 24/246
+  pref-eval 28/246
+  pref-eval 32/246
+  pref-eval 36/246
+  pref-eval 40/246
+  pref-eval 44/246
+  pref-eval 48/246
+  pref-eval 52/246
+  pref-eval 56/246
+  pref-eval 60/246
+  pref-eval 64/246
+  pref-eval 68/246
+  pref-eval 72/246
+  pref-eval 76/246
+  pref-eval 80/246
+  pref-eval 84/246
+  pref-eval 88/246
+  pref-eval 92/246
+  pref-eval 96/246
+  pref-eval 100/246
+  pref-eval 104/246
+  pref-eval 108/246
+  pref-eval 112/246
+  pref-eval 116/246
+  pref-eval 120/246
+  pref-eval 124/246
+  pref-eval 128/246
+  pref-eval 132/246
+  pref-eval 136/246
+  pref-eval 140/246
+  pref-eval 144/246
+  pref-eval 148/246
+  pref-eval 152/246
+  pref-eval 156/246
+  pref-eval 160/246
+  pref-eval 164/246
+  pref-eval 168/246
+  pref-eval 172/246
+  pref-eval 176/246
+  pref-eval 180/246
+  pref-eval 184/246
+  pref-eval 188/246
+  pref-eval 192/246
+  pref-eval 196/246
+  pref-eval 200/246
+  pref-eval 204/246
+  pref-eval 208/246
+  pref-eval 212/246
+  pref-eval 216/246
+  pref-eval 220/246
+  pref-eval 224/246
+  pref-eval 228/246
+  pref-eval 232/246
+  pref-eval 236/246
+  pref-eval 240/246
+  pref-eval 244/246
+  pref-eval 246/246
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task1_dpo/eval_standard_lengthstrat.json
+  pref-eval 4/246
+  pref-eval 8/246
+  pref-eval 12/246
+  pref-eval 16/246
+  pref-eval 20/246
+  pref-eval 24/246
+  pref-eval 28/246
+  pref-eval 32/246
+  pref-eval 36/246
+  pref-eval 40/246
+  pref-eval 44/246
+  pref-eval 48/246
+  pref-eval 52/246
+  pref-eval 56/246
+  pref-eval 60/246
+  pref-eval 64/246
+  pref-eval 68/246
+  pref-eval 72/246
+  pref-eval 76/246
+  pref-eval 80/246
+  pref-eval 84/246
+  pref-eval 88/246
+  pref-eval 92/246
+  pref-eval 96/246
+  pref-eval 100/246
+  pref-eval 104/246
+  pref-eval 108/246
+  pref-eval 112/246
+  pref-eval 116/246
+  pref-eval 120/246
+  pref-eval 124/246
+  pref-eval 128/246
+  pref-eval 132/246
+  pref-eval 136/246
+  pref-eval 140/246
+  pref-eval 144/246
+  pref-eval 148/246
+  pref-eval 152/246
+  pref-eval 156/246
+  pref-eval 160/246
+  pref-eval 164/246
+  pref-eval 168/246
+  pref-eval 172/246
+  pref-eval 176/246
+  pref-eval 180/246
+  pref-eval 184/246
+  pref-eval 188/246
+  pref-eval 192/246
+  pref-eval 196/246
+  pref-eval 200/246
+  pref-eval 204/246
+  pref-eval 208/246
+  pref-eval 212/246
+  pref-eval 216/246
+  pref-eval 220/246
+  pref-eval 224/246
+  pref-eval 228/246
+  pref-eval 232/246
+  pref-eval 236/246
+  pref-eval 240/246
+  pref-eval 244/246
+  pref-eval 246/246
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  eval 4/10
+  eval 8/10
+  eval 10/10
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task1_dpo/eval_length_balanced_lengthstrat.json
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task1_dpo/length_study_summary.json
+[20:54:04] DONE  t1_length_study
+GPU0 queue finished.

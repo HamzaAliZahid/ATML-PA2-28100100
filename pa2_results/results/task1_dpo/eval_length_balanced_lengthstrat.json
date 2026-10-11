@@ -1,0 +1,107 @@
+{
+  "name": "length_balanced_lengthstrat",
+  "adapter": "outputs/task1_dpo/length_balanced",
+  "beta": 0.1,
+  "preference_eval_file": "data/dpo_length_stratified_eval.jsonl",
+  "preference": {
+    "overall": {
+      "n": 237,
+      "preference_accuracy": 0.6118143459915611,
+      "dpo_loss": 0.6765934387339821,
+      "margin_mean": 0.43044390255891823,
+      "margin_std": 1.9533730497458048,
+      "chosen_reward_mean": -0.14177874214790037,
+      "rejected_reward_mean": -0.18482313244151669,
+      "chosen_longer_fraction": 0.46835443037974683
+    },
+    "skipped_too_long": 9,
+    "beta_used_for_loss": 0.1,
+    "by_stratum": {
+      "length_matched": {
+        "n": 80,
+        "preference_accuracy": 0.6,
+        "dpo_loss": 0.679480442777276,
+        "margin_mean": 0.3231271177530289,
+        "margin_std": 1.3779120755877783,
+        "chosen_reward_mean": -0.1101244854182005,
+        "rejected_reward_mean": -0.1424371971935034,
+        "chosen_longer_fraction": 0.45
+      },
+      "preferred_longer": {
+        "n": 78,
+        "preference_accuracy": 0.44871794871794873,
+        "dpo_loss": 0.7207284432191116,
+        "margin_mean": -0.4603248498378656,
+        "margin_std": 1.860171927034719,
+        "chosen_reward_mean": -0.20268365419827977,
+        "rejected_reward_mean": -0.15665116921449318,
+        "chosen_longer_fraction": 0.9615384615384616
+      },
+      "rejected_longer": {
+        "n": 79,
+        "preference_accuracy": 0.7848101265822784,
+        "dpo_loss": 0.6300935567934302,
+        "margin_mean": 1.4186123262477826,
+        "margin_std": 2.0823832552725445,
+        "chosen_reward_mean": -0.11369972187507002,
+        "rejected_reward_mean": -0.25556095461302164,
+        "chosen_longer_fraction": 0.0
+      }
+    }
+  },
+  "generation": {
+    "n_prompts": 64,
+    "reward": {
+      "mean": 1.0844427775591612,
+      "std": 1.4225555875099547,
+      "n": 64
+    },
+    "kl_token_mean": 0.0024217793483293313,
+    "kl_seq_mean": 0.4081455007981276,
+    "kl_seq_std": 0.6166169450397873,
+    "sample_entropy": 0.7003872999921441,
+    "full_entropy": 0.9069266995806697,
+    "response_length": {
+      "mean": 168.53125,
+      "std": 101.28903086434137,
+      "median": 245.5,
+      "iqr": 192.5,
+      "min": 2.0,
+      "max": 256.0,
+      "n": 64
+    },
+    "truncated_fraction": 0.5,
+    "decoding": {
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "do_sample": true,
+      "max_new_tokens": 256,
+      "seed": 6304
+    },
+    "word_limit_compliance": 0.0,
+    "word_limit_n": 1
+  },
+  "word_limit": {
+    "compliance": 0.4,
+    "n": 10,
+    "response_length": {
+      "mean": 48.0,
+      "std": 17.787636155487327,
+      "median": 41.5,
+      "iqr": 29.5,
+      "min": 25.0,
+      "max": 78.0,
+      "n": 10
+    },
+    "word_count": {
+      "mean": 41.0,
+      "std": 15.614096195425466,
+      "median": 34.5,
+      "iqr": 28.0,
+      "min": 22.0,
+      "max": 64.0,
+      "n": 10
+    },
+    "mean_words_over_limit": 8.1
+  }
+}

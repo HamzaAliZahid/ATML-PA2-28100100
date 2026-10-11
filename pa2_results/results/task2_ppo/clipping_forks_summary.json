@@ -1,0 +1,188 @@
+{
+  "clip_eps0p05": {
+    "clip_epsilon": 0.05,
+    "heldout": {
+      "n_prompts": 64,
+      "reward": {
+        "mean": 1.2217884063720703,
+        "std": 2.067702323565613,
+        "n": 64
+      },
+      "kl_token_mean": -3.822582135281075e-05,
+      "kl_seq_mean": -0.011710838738508755,
+      "kl_seq_std": 0.09377499414550831,
+      "sample_entropy": 0.7340248625114327,
+      "full_entropy": 0.9346764454414735,
+      "response_length": {
+        "mean": 306.359375,
+        "std": 281.8176697345455,
+        "median": 217.0,
+        "iqr": 500.0,
+        "min": 2.0,
+        "max": 768.0,
+        "n": 64
+      },
+      "truncated_fraction": 0.171875,
+      "decoding": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "do_sample": true,
+        "max_new_tokens": 768,
+        "seed": 6304
+      },
+      "adapter": "outputs/task2_ppo/clip_eps0p05"
+    },
+    "train_summary": {
+      "run_name": "clip_eps0p05",
+      "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task2_ppo/clip_eps0p05",
+      "updates": 8,
+      "clip_epsilon": 0.05,
+      "kl_beta": 0.1,
+      "ppo_epochs": 2,
+      "prompts_per_update": 1,
+      "policy_learning_rate": 3e-06,
+      "max_response_length": 512,
+      "seed": 6304,
+      "generated_tokens_total": 1103,
+      "wall_clock_s": 63.1674890700001,
+      "peak_vram_gb": 7.1112470626831055,
+      "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/train_clip_eps0p05_log.jsonl"
+    },
+    "stability": {
+      "policy_grad_norm_mean": 0.6986358613432767,
+      "policy_grad_norm_std": 0.6612354010573591,
+      "policy_grad_norm_max": 2.351399201840863,
+      "approx_kl_old_mean": 3.734037896663267e-06,
+      "approx_kl_old_max": 7.817287951183971e-06,
+      "ratio_max_overall": 1.0151441097259521,
+      "clip_fraction_mean": 0.0,
+      "reward_std_over_updates": 1.0225325539291403,
+      "kl_ref_increase": 0.00028905713770654984,
+      "value_loss_mean": 5.389557536691427
+    }
+  },
+  "clip_eps0p2": {
+    "clip_epsilon": 0.2,
+    "heldout": {
+      "n_prompts": 64,
+      "reward": {
+        "mean": 1.2217884063720703,
+        "std": 2.067702323565613,
+        "n": 64
+      },
+      "kl_token_mean": -3.822582135281075e-05,
+      "kl_seq_mean": -0.011710838738508755,
+      "kl_seq_std": 0.09377499414550831,
+      "sample_entropy": 0.7340248625114327,
+      "full_entropy": 0.9346764454414735,
+      "response_length": {
+        "mean": 306.359375,
+        "std": 281.8176697345455,
+        "median": 217.0,
+        "iqr": 500.0,
+        "min": 2.0,
+        "max": 768.0,
+        "n": 64
+      },
+      "truncated_fraction": 0.171875,
+      "decoding": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "do_sample": true,
+        "max_new_tokens": 768,
+        "seed": 6304
+      },
+      "adapter": "outputs/task2_ppo/clip_eps0p2"
+    },
+    "train_summary": {
+      "run_name": "clip_eps0p2",
+      "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task2_ppo/clip_eps0p2",
+      "updates": 8,
+      "clip_epsilon": 0.2,
+      "kl_beta": 0.1,
+      "ppo_epochs": 2,
+      "prompts_per_update": 1,
+      "policy_learning_rate": 3e-06,
+      "max_response_length": 512,
+      "seed": 6304,
+      "generated_tokens_total": 1103,
+      "wall_clock_s": 65.87452049799958,
+      "peak_vram_gb": 7.106949329376221,
+      "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/train_clip_eps0p2_log.jsonl"
+    },
+    "stability": {
+      "policy_grad_norm_mean": 0.6986358613432767,
+      "policy_grad_norm_std": 0.6612354010573591,
+      "policy_grad_norm_max": 2.351399201840863,
+      "approx_kl_old_mean": 3.734037896663267e-06,
+      "approx_kl_old_max": 7.817287951183971e-06,
+      "ratio_max_overall": 1.0151441097259521,
+      "clip_fraction_mean": 0.0,
+      "reward_std_over_updates": 1.0225325539291403,
+      "kl_ref_increase": 0.00028905713770654984,
+      "value_loss_mean": 5.389557536691427
+    }
+  },
+  "clip_eps0p5": {
+    "clip_epsilon": 0.5,
+    "heldout": {
+      "n_prompts": 64,
+      "reward": {
+        "mean": 1.2217884063720703,
+        "std": 2.067702323565613,
+        "n": 64
+      },
+      "kl_token_mean": -3.822582135281075e-05,
+      "kl_seq_mean": -0.011710838738508755,
+      "kl_seq_std": 0.09377499414550831,
+      "sample_entropy": 0.7340248625114327,
+      "full_entropy": 0.9346764454414735,
+      "response_length": {
+        "mean": 306.359375,
+        "std": 281.8176697345455,
+        "median": 217.0,
+        "iqr": 500.0,
+        "min": 2.0,
+        "max": 768.0,
+        "n": 64
+      },
+      "truncated_fraction": 0.171875,
+      "decoding": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "do_sample": true,
+        "max_new_tokens": 768,
+        "seed": 6304
+      },
+      "adapter": "outputs/task2_ppo/clip_eps0p5"
+    },
+    "train_summary": {
+      "run_name": "clip_eps0p5",
+      "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task2_ppo/clip_eps0p5",
+      "updates": 8,
+      "clip_epsilon": 0.5,
+      "kl_beta": 0.1,
+      "ppo_epochs": 2,
+      "prompts_per_update": 1,
+      "policy_learning_rate": 3e-06,
+      "max_response_length": 512,
+      "seed": 6304,
+      "generated_tokens_total": 1103,
+      "wall_clock_s": 65.84596597100062,
+      "peak_vram_gb": 7.106949329376221,
+      "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/train_clip_eps0p5_log.jsonl"
+    },
+    "stability": {
+      "policy_grad_norm_mean": 0.6986358613432767,
+      "policy_grad_norm_std": 0.6612354010573591,
+      "policy_grad_norm_max": 2.351399201840863,
+      "approx_kl_old_mean": 3.734037896663267e-06,
+      "approx_kl_old_max": 7.817287951183971e-06,
+      "ratio_max_overall": 1.0151441097259521,
+      "clip_fraction_mean": 0.0,
+      "reward_std_over_updates": 1.0225325539291403,
+      "kl_ref_increase": 0.00028905713770654984,
+      "value_loss_mean": 5.389557536691427
+    }
+  }
+}

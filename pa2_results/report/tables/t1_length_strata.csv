@@ -1,0 +1,7 @@
+,,pref_acc,margin,n
+standard,length_matched,0.6,0.1696047991514206,80.0
+standard,preferred_longer,0.46153846153846156,-0.06237651140261919,78.0
+standard,rejected_longer,0.6708860759493671,0.6494322019287303,79.0
+length_balanced,length_matched,0.6,0.3231271177530289,80.0
+length_balanced,preferred_longer,0.44871794871794873,-0.4603248498378656,78.0
+length_balanced,rejected_longer,0.7848101265822784,1.4186123262477826,79.0

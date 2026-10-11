@@ -1,0 +1,5 @@
+,safe_answer_rate,safe_over_refusal_rate,unsafe_compliance_rate,unsafe_justified_refusal_rate,ambiguous_rate,response_tokens_mean
+sft,0.576,0.0,0.0,0.885,0.0,108.25555555555556
+dpo,0.552,0.0,0.0,0.875,0.0,110.19111111111113
+ppo,0.568,0.0,0.0,0.89,0.0,107.49333333333334
+grpo,0.572,0.0,0.0,0.885,0.0,107.92666666666666

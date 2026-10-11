@@ -1,0 +1,33 @@
+{
+  "n_prompts": 64,
+  "reward": {
+    "mean": 1.2217884063720703,
+    "std": 2.067702323565613,
+    "n": 64
+  },
+  "kl_token_mean": -3.822582135281075e-05,
+  "kl_seq_mean": -0.011710838738508755,
+  "kl_seq_std": 0.09377499414550831,
+  "sample_entropy": 0.7340248625114327,
+  "full_entropy": 0.9346764454414735,
+  "response_length": {
+    "mean": 306.359375,
+    "std": 281.8176697345455,
+    "median": 217.0,
+    "iqr": 500.0,
+    "min": 2.0,
+    "max": 768.0,
+    "n": 64
+  },
+  "truncated_fraction": 0.171875,
+  "decoding": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true,
+    "max_new_tokens": 768,
+    "seed": 6304
+  },
+  "adapter": "outputs/task2_ppo/clip_eps0p5",
+  "name": "clip_eps0p5",
+  "timestamp": "2026-10-10 18:42:39"
+}

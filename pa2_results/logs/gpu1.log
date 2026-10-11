@@ -1,0 +1,615 @@
+[17:23:05] START t2_train_standard :: python -m task2_ppo.continue_train --config configs/ppo.yaml --run-name standard
+[PPO:standard] updates=20 eps=0.2 beta_kl=0.1 prompts/update=1
+[PPO:standard] 1/20 R=2.170 KL=-0.0003 pl=-0.0001 vl=4.9237 clip=0.000 H=0.801 len=512 t=29s
+[PPO:standard] 2/20 R=0.948 KL=-0.0011 pl=-0.0000 vl=13.7168 clip=0.000 H=0.844 len=5 t=1s
+[PPO:standard] 3/20 R=0.996 KL=-0.0005 pl=-0.0002 vl=5.0613 clip=0.000 H=1.059 len=208 t=11s
+[PPO:standard] 4/20 R=-1.355 KL=0.0006 pl=-0.0000 vl=2.6292 clip=0.000 H=0.372 len=39 t=3s
+[PPO:standard] 5/20 R=-0.236 KL=0.0005 pl=-0.0001 vl=0.5292 clip=0.000 H=0.194 len=4 t=1s
+[PPO:standard] 6/20 R=0.602 KL=-0.0009 pl=0.0007 vl=6.5272 clip=0.000 H=0.750 len=13 t=2s
+[PPO:standard] 7/20 R=-0.176 KL=-0.0011 pl=-0.0004 vl=5.3083 clip=0.000 H=0.756 len=79 t=5s
+[PPO:standard] 8/20 R=1.329 KL=0.0000 pl=0.0001 vl=4.4207 clip=0.000 H=1.178 len=243 t=13s
+[PPO:standard] 9/20 R=-0.064 KL=-0.0001 pl=-0.0000 vl=6.2309 clip=0.000 H=0.879 len=512 t=27s
+[PPO:standard] 10/20 R=0.981 KL=0.0005 pl=-0.0002 vl=2.5027 clip=0.000 H=1.104 len=176 t=10s
+[PPO:standard] 11/20 R=1.354 KL=0.0006 pl=0.0002 vl=2.8858 clip=0.000 H=0.728 len=55 t=4s
+[PPO:standard] 12/20 R=2.084 KL=-0.0005 pl=-0.0005 vl=2.4491 clip=0.000 H=0.784 len=186 t=10s
+[PPO:standard] 13/20 R=2.057 KL=-0.0002 pl=0.0002 vl=3.0447 clip=0.000 H=1.144 len=359 t=18s
+[PPO:standard] 14/20 R=0.081 KL=0.0004 pl=-0.0001 vl=1.5112 clip=0.000 H=0.087 len=8 t=2s
+[PPO:standard] 15/20 R=-0.804 KL=-0.0001 pl=-0.0000 vl=5.5387 clip=0.000 H=0.590 len=512 t=27s
+[PPO:standard] 16/20 R=2.613 KL=0.0001 pl=0.0000 vl=4.0233 clip=0.000 H=1.349 len=503 t=27s
+[PPO:standard] 17/20 R=-0.324 KL=0.0003 pl=-0.0001 vl=3.7647 clip=0.000 H=0.320 len=64 t=4s
+[PPO:standard] 18/20 R=-1.184 KL=0.0000 pl=0.0001 vl=2.6040 clip=0.000 H=1.740 len=512 t=27s
+[PPO:standard] 19/20 R=2.809 KL=-0.0001 pl=0.0002 vl=2.3210 clip=0.000 H=0.728 len=262 t=14s
+[PPO:standard] 20/20 R=0.592 KL=0.0008 pl=-0.0004 vl=1.7786 clip=0.000 H=1.383 len=47 t=3s
+[PPO:standard] done in 4.0 min, peak VRAM 7.49 GB
+[17:28:34] DONE  t2_train_standard
+[17:28:34] START t3_train_standard :: python -m task3_grpo.continue_train --config configs/grpo.yaml --run-name standard
+[GRPO:standard] updates=20 K=4 loss_type=grpo eps=0.2 beta=0.1
+[GRPO:standard] 1/20 R=2.650 gstd=0.640 uninf=0.00 KL=-0.0002 gn=0.091 H=1.055 len=475 t=29s
+[GRPO:standard] 2/20 R=1.172 gstd=0.346 uninf=0.00 KL=0.0006 gn=1.504 H=0.828 len=6 t=2s
+[GRPO:standard] 3/20 R=1.582 gstd=0.428 uninf=0.00 KL=-0.0016 gn=8.892 H=0.715 len=2 t=2s
+[GRPO:standard] 4/20 R=0.864 gstd=0.087 uninf=0.00 KL=0.0003 gn=0.273 H=0.493 len=170 t=18s
+[GRPO:standard] 5/20 R=-0.135 gstd=0.000 uninf=1.00 KL=-0.0001 gn=0.000 H=0.196 len=4 t=2s
+[GRPO:standard] 6/20 R=0.848 gstd=0.339 uninf=0.00 KL=-0.0018 gn=1.460 H=0.865 len=12 t=3s
+[GRPO:standard] 7/20 R=-0.141 gstd=1.571 uninf=0.00 KL=0.0015 gn=0.618 H=0.828 len=59 t=7s
+[GRPO:standard] 8/20 R=0.273 gstd=1.450 uninf=0.00 KL=0.0005 gn=0.817 H=1.271 len=120 t=16s
+[GRPO:standard] 9/20 R=-0.456 gstd=1.183 uninf=0.00 KL=-0.0000 gn=0.091 H=1.716 len=408 t=30s
+[GRPO:standard] 10/20 R=-0.079 gstd=0.841 uninf=0.00 KL=-0.0000 gn=0.382 H=1.003 len=248 t=31s
+[GRPO:standard] 11/20 R=2.020 gstd=0.472 uninf=0.00 KL=-0.0002 gn=0.327 H=0.805 len=128 t=13s
+[GRPO:standard] 12/20 R=2.458 gstd=0.561 uninf=0.00 KL=0.0001 gn=0.203 H=0.813 len=138 t=10s
+[GRPO:standard] 13/20 R=2.096 gstd=0.221 uninf=0.00 KL=0.0004 gn=0.202 H=1.236 len=329 t=26s
+[GRPO:standard] 14/20 R=0.130 gstd=0.000 uninf=1.00 KL=-0.0003 gn=0.000 H=0.087 len=8 t=3s
+[GRPO:standard] 15/20 R=-0.446 gstd=0.736 uninf=0.00 KL=-0.0000 gn=0.000 H=0.000 len=512 t=27s
+[GRPO:standard] 16/20 R=2.461 gstd=0.390 uninf=0.00 KL=0.0000 gn=0.183 H=1.219 len=334 t=28s
+[GRPO:standard] 17/20 R=-0.087 gstd=0.276 uninf=0.00 KL=-0.0003 gn=0.303 H=0.572 len=65 t=7s
+[GRPO:standard] 18/20 R=-1.145 gstd=0.000 uninf=1.00 KL=0.0001 gn=0.000 H=0.000 len=512 t=29s
+[GRPO:standard] 19/20 R=3.112 gstd=0.198 uninf=0.00 KL=0.0002 gn=0.126 H=0.881 len=382 t=25s
+[GRPO:standard] 20/20 R=0.750 gstd=1.432 uninf=0.00 KL=0.0001 gn=0.580 H=1.065 len=152 t=23s
+[GRPO:standard] done in 5.5 min, peak VRAM 8.65 GB
+[17:34:29] DONE  t3_train_standard
+[17:34:29] START t3_group_size :: python -m task3_grpo.analyze_group_size --config configs/grpo.yaml
+Cached prompts: 24
+Group sizes to analyze: [2, 4, 8]
+Cache row keys: ['clipped_at_max', 'completion', 'completion_tokens', 'generation_index', 'prompt_id', 'reward', 'source_index', 'terminated_with_eos']
+K=2: groups=96 informative=0.938 mean_std=0.385 adv_var=0.937 near-uninformative(0.1)=0.365
+K=4: groups=48 informative=0.958 mean_std=0.541 adv_var=0.958 near-uninformative(0.1)=0.146
+K=8: groups=24 informative=0.958 mean_std=0.619 adv_var=0.958 near-uninformative(0.1)=0.042
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task3_grpo/group_size_study.json
+[17:34:33] DONE  t3_group_size
+[17:34:33] START t2_eval_standard :: python -m task2_ppo.evaluate --config configs/ppo.yaml --adapter outputs/task2_ppo/standard --name standard
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/eval_standard.json
+[17:42:44] DONE  t2_eval_standard
+[17:42:44] START t2_eval_midpoint :: python -m task2_ppo.evaluate --config configs/ppo.yaml --adapter checkpoints/ppo_midpoint_policy --name midpoint
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/eval_midpoint.json
+[17:50:40] DONE  t2_eval_midpoint
+[17:50:40] START t3_eval_standard :: python -m task3_grpo.evaluate --config configs/grpo.yaml --adapter outputs/task3_grpo/standard --name standard
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task3_grpo/eval_standard.json
+[17:58:57] DONE  t3_eval_standard
+[17:58:57] START t3_eval_midpoint :: python -m task3_grpo.evaluate --config configs/grpo.yaml --adapter checkpoints/grpo_midpoint_policy --name midpoint
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task3_grpo/eval_midpoint.json
+[18:07:39] DONE  t3_eval_midpoint
+[18:07:39] START t2_clip_cached :: python -m task2_ppo.analyze_clipping --config configs/ppo.yaml --part cached
+Required epsilon values: [0.05, 0.2, 0.5]
+Cached rollouts: 32; tokenization mismatches: 0
+step-0 ratio diagnostics: {'ratio_mean': 1.0119818449020386, 'ratio_std': 0.5337115526199341, 'abs_log_ratio_mean': 0.06620997190475464, 'unclipped_surrogate': 0.00027960704755969346}
+eps=0.05: final clip=0.152 affected=0.077
+eps=0.2: final clip=0.041 affected=0.020
+eps=0.5: final clip=0.021 affected=0.010
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/clipping_cached_study.json
+[18:11:55] DONE  t2_clip_cached
+[18:11:55] START t2_clip_forks :: python -m task2_ppo.analyze_clipping --config configs/ppo.yaml --part forks --skip-existing
+Required epsilon values: [0.05, 0.2, 0.5]
+[PPO:clip_eps0p05] updates=8 eps=0.05 beta_kl=0.1 prompts/update=1
+[PPO:clip_eps0p05] 1/8 R=2.170 KL=-0.0003 pl=-0.0001 vl=4.9237 clip=0.000 H=0.801 len=512 t=26s
+[PPO:clip_eps0p05] 2/8 R=0.948 KL=-0.0011 pl=-0.0000 vl=13.7168 clip=0.000 H=0.844 len=5 t=1s
+[PPO:clip_eps0p05] 3/8 R=0.996 KL=-0.0005 pl=-0.0002 vl=5.0613 clip=0.000 H=1.059 len=208 t=11s
+[PPO:clip_eps0p05] 4/8 R=-1.355 KL=0.0006 pl=-0.0000 vl=2.6292 clip=0.000 H=0.372 len=39 t=3s
+[PPO:clip_eps0p05] 5/8 R=-0.236 KL=0.0005 pl=-0.0001 vl=0.5292 clip=0.000 H=0.194 len=4 t=1s
+[PPO:clip_eps0p05] 6/8 R=0.602 KL=-0.0009 pl=0.0007 vl=6.5272 clip=0.000 H=0.750 len=13 t=2s
+[PPO:clip_eps0p05] 7/8 R=-0.176 KL=-0.0011 pl=-0.0004 vl=5.3083 clip=0.000 H=0.756 len=79 t=5s
+[PPO:clip_eps0p05] 8/8 R=1.329 KL=0.0000 pl=0.0001 vl=4.4207 clip=0.000 H=1.178 len=243 t=13s
+[PPO:clip_eps0p05] done in 1.1 min, peak VRAM 7.11 GB
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/eval_clip_eps0p05.json
+[PPO:clip_eps0p2] updates=8 eps=0.2 beta_kl=0.1 prompts/update=1
+[PPO:clip_eps0p2] 1/8 R=2.170 KL=-0.0003 pl=-0.0001 vl=4.9237 clip=0.000 H=0.801 len=512 t=28s
+[PPO:clip_eps0p2] 2/8 R=0.948 KL=-0.0011 pl=-0.0000 vl=13.7168 clip=0.000 H=0.844 len=5 t=1s
+[PPO:clip_eps0p2] 3/8 R=0.996 KL=-0.0005 pl=-0.0002 vl=5.0613 clip=0.000 H=1.059 len=208 t=11s
+[PPO:clip_eps0p2] 4/8 R=-1.355 KL=0.0006 pl=-0.0000 vl=2.6292 clip=0.000 H=0.372 len=39 t=3s
+[PPO:clip_eps0p2] 5/8 R=-0.236 KL=0.0005 pl=-0.0001 vl=0.5292 clip=0.000 H=0.194 len=4 t=1s
+[PPO:clip_eps0p2] 6/8 R=0.602 KL=-0.0009 pl=0.0007 vl=6.5272 clip=0.000 H=0.750 len=13 t=2s
+[PPO:clip_eps0p2] 7/8 R=-0.176 KL=-0.0011 pl=-0.0004 vl=5.3083 clip=0.000 H=0.756 len=79 t=5s
+[PPO:clip_eps0p2] 8/8 R=1.329 KL=0.0000 pl=0.0001 vl=4.4207 clip=0.000 H=1.178 len=243 t=14s
+[PPO:clip_eps0p2] done in 1.1 min, peak VRAM 7.11 GB
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/eval_clip_eps0p2.json
+[PPO:clip_eps0p5] updates=8 eps=0.5 beta_kl=0.1 prompts/update=1
+[PPO:clip_eps0p5] 1/8 R=2.170 KL=-0.0003 pl=-0.0001 vl=4.9237 clip=0.000 H=0.801 len=512 t=28s
+[PPO:clip_eps0p5] 2/8 R=0.948 KL=-0.0011 pl=-0.0000 vl=13.7168 clip=0.000 H=0.844 len=5 t=1s
+[PPO:clip_eps0p5] 3/8 R=0.996 KL=-0.0005 pl=-0.0002 vl=5.0613 clip=0.000 H=1.059 len=208 t=12s
+[PPO:clip_eps0p5] 4/8 R=-1.355 KL=0.0006 pl=-0.0000 vl=2.6292 clip=0.000 H=0.372 len=39 t=3s
+[PPO:clip_eps0p5] 5/8 R=-0.236 KL=0.0005 pl=-0.0001 vl=0.5292 clip=0.000 H=0.194 len=4 t=1s
+[PPO:clip_eps0p5] 6/8 R=0.602 KL=-0.0009 pl=0.0007 vl=6.5272 clip=0.000 H=0.750 len=13 t=2s
+[PPO:clip_eps0p5] 7/8 R=-0.176 KL=-0.0011 pl=-0.0004 vl=5.3083 clip=0.000 H=0.756 len=79 t=5s
+[PPO:clip_eps0p5] 8/8 R=1.329 KL=0.0000 pl=0.0001 vl=4.4207 clip=0.000 H=1.178 len=243 t=14s
+[PPO:clip_eps0p5] done in 1.1 min, peak VRAM 7.11 GB
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/eval_clip_eps0p5.json
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/clipping_forks_summary.json
+[18:42:42] DONE  t2_clip_forks
+[18:42:42] START t2_kl_forks :: python -m task2_ppo.ablate_kl --config configs/ppo.yaml --skip-existing
+KL beta conditions: [0.0, 0.1, 0.2]
+Fork update budget: 8
+[PPO:kl_beta0] updates=8 eps=0.2 beta_kl=0.0 prompts/update=1
+[PPO:kl_beta0] 1/8 R=2.170 KL=-0.0003 pl=-0.0001 vl=4.9231 clip=0.000 H=0.801 len=512 t=26s
+[PPO:kl_beta0] 2/8 R=0.948 KL=0.0017 pl=0.0002 vl=13.7221 clip=0.000 H=0.844 len=5 t=1s
+[PPO:kl_beta0] 3/8 R=2.283 KL=0.0001 pl=-0.0002 vl=5.9837 clip=0.000 H=1.166 len=193 t=10s
+[PPO:kl_beta0] 4/8 R=-0.104 KL=0.0004 pl=0.0001 vl=3.5801 clip=0.000 H=0.917 len=210 t=12s
+[PPO:kl_beta0] 5/8 R=-0.236 KL=0.0002 pl=0.0001 vl=0.5923 clip=0.000 H=0.196 len=4 t=1s
+[PPO:kl_beta0] 6/8 R=1.698 KL=0.0015 pl=-0.0002 vl=13.9088 clip=0.000 H=0.901 len=15 t=2s
+[PPO:kl_beta0] 7/8 R=-0.751 KL=0.0006 pl=0.0003 vl=3.9703 clip=0.000 H=1.072 len=86 t=5s
+[PPO:kl_beta0] 8/8 R=0.806 KL=0.0003 pl=0.0001 vl=5.0736 clip=0.000 H=1.448 len=181 t=10s
+[PPO:kl_beta0] done in 1.1 min, peak VRAM 7.11 GB
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/eval_kl_beta0.json
+[PPO:kl_beta0p1] updates=8 eps=0.2 beta_kl=0.1 prompts/update=1
+[PPO:kl_beta0p1] 1/8 R=2.170 KL=-0.0003 pl=-0.0001 vl=4.9237 clip=0.000 H=0.801 len=512 t=28s
+[PPO:kl_beta0p1] 2/8 R=0.948 KL=-0.0011 pl=-0.0000 vl=13.7168 clip=0.000 H=0.844 len=5 t=1s
+[PPO:kl_beta0p1] 3/8 R=0.996 KL=-0.0005 pl=-0.0002 vl=5.0613 clip=0.000 H=1.059 len=208 t=12s
+[PPO:kl_beta0p1] 4/8 R=-1.355 KL=0.0006 pl=-0.0000 vl=2.6292 clip=0.000 H=0.372 len=39 t=3s
+[PPO:kl_beta0p1] 5/8 R=-0.236 KL=0.0005 pl=-0.0001 vl=0.5292 clip=0.000 H=0.194 len=4 t=1s
+[PPO:kl_beta0p1] 6/8 R=0.602 KL=-0.0009 pl=0.0007 vl=6.5272 clip=0.000 H=0.750 len=13 t=2s
+[PPO:kl_beta0p1] 7/8 R=-0.176 KL=-0.0011 pl=-0.0004 vl=5.3083 clip=0.000 H=0.756 len=79 t=5s
+[PPO:kl_beta0p1] 8/8 R=1.329 KL=0.0000 pl=0.0001 vl=4.4207 clip=0.000 H=1.178 len=243 t=14s
+[PPO:kl_beta0p1] done in 1.1 min, peak VRAM 7.11 GB
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/eval_kl_beta0p1.json
+[PPO:kl_beta0p2] updates=8 eps=0.2 beta_kl=0.2 prompts/update=1
+[PPO:kl_beta0p2] 1/8 R=2.170 KL=-0.0003 pl=-0.0002 vl=4.9242 clip=0.000 H=0.801 len=512 t=28s
+[PPO:kl_beta0p2] 2/8 R=0.948 KL=-0.0007 pl=0.0001 vl=13.7273 clip=0.000 H=0.844 len=5 t=1s
+[PPO:kl_beta0p2] 3/8 R=1.522 KL=0.0003 pl=0.0002 vl=5.3291 clip=0.000 H=1.189 len=206 t=12s
+[PPO:kl_beta0p2] 4/8 R=0.985 KL=0.0001 pl=-0.0001 vl=3.6072 clip=0.000 H=0.713 len=200 t=12s
+[PPO:kl_beta0p2] 5/8 R=-0.236 KL=0.0002 pl=-0.0001 vl=0.6045 clip=0.000 H=0.195 len=4 t=1s
+[PPO:kl_beta0p2] 6/8 R=0.589 KL=0.0030 pl=0.0003 vl=10.9888 clip=0.000 H=1.077 len=16 t=2s
+[PPO:kl_beta0p2] 7/8 R=-1.318 KL=0.0006 pl=-0.0001 vl=5.0854 clip=0.000 H=0.532 len=47 t=3s
+[PPO:kl_beta0p2] 8/8 R=1.602 KL=-0.0005 pl=-0.0001 vl=6.7332 clip=0.000 H=1.197 len=118 t=7s
+[PPO:kl_beta0p2] done in 1.1 min, peak VRAM 7.11 GB
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/eval_kl_beta0p2.json
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/kl_study_summary.json
+[19:13:41] DONE  t2_kl_forks
+[19:13:41] START t3_normalization :: python -m task3_grpo.compare_normalization --config configs/grpo.yaml --skip-existing
+Fork updates: 8
+Compare loss_type='grpo' vs loss_type='dr_grpo' from the identical supplied midpoint.
+[GRPO:norm_grpo] updates=8 K=4 loss_type=grpo eps=0.2 beta=0.1
+[GRPO:norm_grpo] 1/8 R=2.650 gstd=0.640 uninf=0.00 KL=-0.0002 gn=0.091 H=1.055 len=475 t=31s
+[GRPO:norm_grpo] 2/8 R=1.172 gstd=0.346 uninf=0.00 KL=0.0006 gn=1.504 H=0.828 len=6 t=2s
+[GRPO:norm_grpo] 3/8 R=1.582 gstd=0.428 uninf=0.00 KL=-0.0016 gn=8.892 H=0.715 len=2 t=2s
+[GRPO:norm_grpo] 4/8 R=0.864 gstd=0.087 uninf=0.00 KL=0.0003 gn=0.273 H=0.493 len=170 t=18s
+[GRPO:norm_grpo] 5/8 R=-0.135 gstd=0.000 uninf=1.00 KL=-0.0001 gn=0.000 H=0.196 len=4 t=2s
+[GRPO:norm_grpo] 6/8 R=0.848 gstd=0.339 uninf=0.00 KL=-0.0018 gn=1.460 H=0.865 len=12 t=3s
+[GRPO:norm_grpo] 7/8 R=-0.141 gstd=1.571 uninf=0.00 KL=0.0015 gn=0.618 H=0.828 len=59 t=7s
+[GRPO:norm_grpo] 8/8 R=0.273 gstd=1.450 uninf=0.00 KL=0.0005 gn=0.817 H=1.271 len=120 t=17s
+[GRPO:norm_grpo] done in 1.4 min, peak VRAM 8.38 GB
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task3_grpo/eval_norm_grpo.json
+[GRPO:norm_dr_grpo] updates=8 K=4 loss_type=dr_grpo eps=0.2 beta=0.1
+[GRPO:norm_dr_grpo] 1/8 R=2.650 gstd=0.640 uninf=0.00 KL=-0.0002 gn=0.085 H=1.055 len=475 t=33s
+[GRPO:norm_dr_grpo] 2/8 R=1.172 gstd=0.346 uninf=0.00 KL=-0.0005 gn=0.022 H=0.829 len=6 t=2s
+[GRPO:norm_dr_grpo] 3/8 R=1.582 gstd=0.428 uninf=0.00 KL=0.0018 gn=0.033 H=0.712 len=2 t=2s
+[GRPO:norm_dr_grpo] 4/8 R=0.682 gstd=0.086 uninf=0.00 KL=-0.0000 gn=0.108 H=0.496 len=171 t=19s
+[GRPO:norm_dr_grpo] 5/8 R=-0.135 gstd=0.000 uninf=1.00 KL=-0.0002 gn=0.000 H=0.196 len=4 t=2s
+[GRPO:norm_dr_grpo] 6/8 R=0.848 gstd=0.339 uninf=0.00 KL=-0.0016 gn=0.038 H=0.865 len=12 t=3s
+[GRPO:norm_dr_grpo] 7/8 R=-0.141 gstd=1.571 uninf=0.00 KL=0.0011 gn=0.057 H=0.828 len=59 t=8s
+[GRPO:norm_dr_grpo] 8/8 R=0.273 gstd=1.450 uninf=0.00 KL=0.0000 gn=0.065 H=1.271 len=120 t=17s
+[GRPO:norm_dr_grpo] done in 1.4 min, peak VRAM 8.38 GB
+  eval 4/64
+  eval 8/64
+  eval 12/64
+  eval 16/64
+  eval 20/64
+  eval 24/64
+  eval 28/64
+  eval 32/64
+  eval 36/64
+  eval 40/64
+  eval 44/64
+  eval 48/64
+  eval 52/64
+  eval 56/64
+  eval 60/64
+  eval 64/64
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task3_grpo/eval_norm_dr_grpo.json
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task3_grpo/normalization_study.json
+[19:34:25] DONE  t3_normalization
+[19:34:25] START t5_gsm :: python -m task5_feedback.evaluate_math --config configs/feedback.yaml --dataset gsm --skip-existing
+Rows: 300
+Policies: ['sft', 'rlvr', 'rlaif']
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  sft: 8/300
+  sft: 16/300
+  sft: 24/300
+  sft: 32/300
+  sft: 40/300
+  sft: 48/300
+  sft: 56/300
+  sft: 64/300
+  sft: 72/300
+  sft: 80/300
+  sft: 88/300
+  sft: 96/300
+  sft: 104/300
+  sft: 112/300
+  sft: 120/300
+  sft: 128/300
+  sft: 136/300
+  sft: 144/300
+  sft: 152/300
+  sft: 160/300
+  sft: 168/300
+  sft: 176/300
+  sft: 184/300
+  sft: 192/300
+  sft: 200/300
+  sft: 208/300
+  sft: 216/300
+  sft: 224/300
+  sft: 232/300
+  sft: 240/300
+  sft: 248/300
+  sft: 256/300
+  sft: 264/300
+  sft: 272/300
+  sft: 280/300
+  sft: 288/300
+  sft: 296/300
+  sft: 300/300
+  rlvr: 8/300
+  rlvr: 16/300
+  rlvr: 24/300
+  rlvr: 32/300
+  rlvr: 40/300
+  rlvr: 48/300
+  rlvr: 56/300
+  rlvr: 64/300
+  rlvr: 72/300
+  rlvr: 80/300
+  rlvr: 88/300
+  rlvr: 96/300
+  rlvr: 104/300
+  rlvr: 112/300
+  rlvr: 120/300
+  rlvr: 128/300
+  rlvr: 136/300
+  rlvr: 144/300
+  rlvr: 152/300
+  rlvr: 160/300
+  rlvr: 168/300
+  rlvr: 176/300
+  rlvr: 184/300
+  rlvr: 192/300
+  rlvr: 200/300
+  rlvr: 208/300
+  rlvr: 216/300
+  rlvr: 224/300
+  rlvr: 232/300
+  rlvr: 240/300
+  rlvr: 248/300
+  rlvr: 256/300
+  rlvr: 264/300
+  rlvr: 272/300
+  rlvr: 280/300
+  rlvr: 288/300
+  rlvr: 296/300
+  rlvr: 300/300
+  rlaif: 8/300
+  rlaif: 16/300
+  rlaif: 24/300
+  rlaif: 32/300
+  rlaif: 40/300
+  rlaif: 48/300
+  rlaif: 56/300
+  rlaif: 64/300
+  rlaif: 72/300
+  rlaif: 80/300
+  rlaif: 88/300
+  rlaif: 96/300
+  rlaif: 104/300
+  rlaif: 112/300
+  rlaif: 120/300
+  rlaif: 128/300
+  rlaif: 136/300
+  rlaif: 144/300
+  rlaif: 152/300
+  rlaif: 160/300
+  rlaif: 168/300
+  rlaif: 176/300
+  rlaif: 184/300
+  rlaif: 192/300
+  rlaif: 200/300
+  rlaif: 208/300
+  rlaif: 216/300
+  rlaif: 224/300
+  rlaif: 232/300
+  rlaif: 240/300
+  rlaif: 248/300
+  rlaif: 256/300
+  rlaif: 264/300
+  rlaif: 272/300
+  rlaif: 280/300
+  rlaif: 288/300
+  rlaif: 296/300
+  rlaif: 300/300
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.27s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.47s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.59s/it]
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+rlvr: acc=0.287 win_vs_sft=0.503 ties=286
+rlaif: acc=0.287 win_vs_sft=0.495 ties=287
+sft: acc=0.283
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task5_feedback/math_eval_gsm.json
+[20:16:00] DONE  t5_gsm
+[20:16:00] START t5_transfer :: python -m task5_feedback.evaluate_math --config configs/feedback.yaml --dataset transfer --skip-existing
+Rows: 100
+Policies: ['sft', 'rlvr', 'rlaif']
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  sft: 8/100
+  sft: 16/100
+  sft: 24/100
+  sft: 32/100
+  sft: 40/100
+  sft: 48/100
+  sft: 56/100
+  sft: 64/100
+  sft: 72/100
+  sft: 80/100
+  sft: 88/100
+  sft: 96/100
+  sft: 100/100
+  rlvr: 8/100
+  rlvr: 16/100
+  rlvr: 24/100
+  rlvr: 32/100
+  rlvr: 40/100
+  rlvr: 48/100
+  rlvr: 56/100
+  rlvr: 64/100
+  rlvr: 72/100
+  rlvr: 80/100
+  rlvr: 88/100
+  rlvr: 96/100
+  rlvr: 100/100
+  rlaif: 8/100
+  rlaif: 16/100
+  rlaif: 24/100
+  rlaif: 32/100
+  rlaif: 40/100
+  rlaif: 48/100
+  rlaif: 56/100
+  rlaif: 64/100
+  rlaif: 72/100
+  rlaif: 80/100
+  rlaif: 88/100
+  rlaif: 96/100
+  rlaif: 100/100
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.19s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.29s/it]
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+rlvr: acc=0.460 win_vs_sft=0.515 ties=79
+rlaif: acc=0.440 win_vs_sft=0.525 ties=79
+sft: acc=0.440
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task5_feedback/math_eval_transfer.json
+[20:26:14] DONE  t5_transfer
+[20:26:14] START t5_diagnostics :: python -m task5_feedback.score_perturbations --config configs/feedback.yaml
+Diagnostic problems: 20
+Variants/problem: ['clean_correct', 'corrupt_reasoning_correct_final', 'gold_distractor_wrong_final', 'good_reasoning_wrong_final', 'persuasive_filler_correct']
+Use exact_reward(...) for RLVR and PairwiseAIJudge(...) for RLAIF.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.82s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.98s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+  problem 103 done
+  problem 1122 done
+  problem 113 done
+  problem 1200 done
+  problem 1245 done
+  problem 23 done
+  problem 289 done
+  problem 299 done
+  problem 459 done
+  problem 505 done
+  problem 506 done
+  problem 558 done
+  problem 569 done
+  problem 620 done
+  problem 677 done
+  problem 681 done
+  problem 736 done
+  problem 750 done
+  problem 803 done
+  problem 867 done
+reasoning_only               verifier better/tie/wrong = 0.00/1.00/0.00   judge = 0.00/1.00/0.00
+outcome_only                 verifier better/tie/wrong = 1.00/0.00/0.00   judge = 0.15/0.85/0.00
+persuasive_filler            verifier better/tie/wrong = 0.00/1.00/0.00   judge = 0.00/0.75/0.25
+gold_distractor              verifier better/tie/wrong = 1.00/0.00/0.00   judge = 0.35/0.60/0.05
+distractor_vs_wrong_final    verifier better/tie/wrong = 0.00/1.00/0.00   judge = 0.05/0.95/0.00
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task5_feedback/diagnostic_study.json
+[20:28:30] DONE  t5_diagnostics
+[20:28:30] START t5_compare :: python -m task5_feedback.compare_feedback --config configs/feedback.yaml
+policy                             sft     rlvr    rlaif
+gsm_exact_acc                    0.283    0.287    0.287
+gsm_format                       0.350    0.360    0.360
+gsm_len_mean                   274.330  275.877  275.450
+gsm_len_std                     84.712   86.299   88.108
+svamp_exact_acc                  0.440    0.460    0.440
+svamp_format                     0.570    0.590    0.570
+svamp_len_mean                 163.960  164.070  162.980
+svamp_len_std                   71.746   72.541   70.521
+acc_drop_gsm_to_svamp           -0.157   -0.173   -0.153
+gsm_win_vs_sft                     NaN    0.503    0.495
+gsm_judge_ties                     NaN  286.000  287.000
+gsm_verifier_judge_agree           NaN    0.920    0.937
+gsm_judge_agree_on_decisive        NaN    0.077    0.000
+svamp_win_vs_sft                   NaN    0.515    0.525
+svamp_judge_ties                   NaN   79.000   79.000
+svamp_verifier_judge_agree         NaN    0.770    0.790
+svamp_judge_agree_on_decisive      NaN    0.250    0.500
+win_drop_gsm_to_svamp              NaN   -0.012   -0.030
+                     pair mechanism  n  better_rate  tie_rate  wrong_preference_rate
+           reasoning_only  verifier 20         0.00      1.00                   0.00
+           reasoning_only  ai_judge 20         0.00      1.00                   0.00
+             outcome_only  verifier 20         1.00      0.00                   0.00
+             outcome_only  ai_judge 20         0.15      0.85                   0.00
+        persuasive_filler  verifier 20         0.00      1.00                   0.00
+        persuasive_filler  ai_judge 20         0.00      0.75                   0.25
+          gold_distractor  verifier 20         1.00      0.00                   0.00
+          gold_distractor  ai_judge 20         0.35      0.60                   0.05
+distractor_vs_wrong_final  verifier 20         0.00      1.00                   0.00
+distractor_vs_wrong_final  ai_judge 20         0.05      0.95                   0.00
+Saved /kaggle/working/ATML-PA2-LLM-PostTraining/results/task5_feedback/feedback_comparison.json
+[20:28:32] DONE  t5_compare
+GPU1 queue finished.

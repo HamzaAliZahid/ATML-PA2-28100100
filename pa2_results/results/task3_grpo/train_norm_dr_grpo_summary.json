@@ -1,0 +1,18 @@
+{
+  "run_name": "norm_dr_grpo",
+  "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task3_grpo/norm_dr_grpo",
+  "updates": 8,
+  "loss_type": "dr_grpo",
+  "num_generations": 4,
+  "prompts_per_update": 1,
+  "clip_epsilon": 0.2,
+  "kl_beta": 0.1,
+  "learning_rate": 5e-06,
+  "max_completion_length": 512,
+  "mask_truncated_completions": true,
+  "seed": 6304,
+  "generated_tokens_total": 3398,
+  "wall_clock_s": 86.22101140500035,
+  "peak_vram_gb": 8.38320779800415,
+  "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task3_grpo/train_norm_dr_grpo_log.jsonl"
+}

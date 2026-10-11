@@ -1,0 +1,234 @@
+{
+  "budget": {
+    "examples": 600,
+    "epochs": 1,
+    "note": "short fork budget; the standard run uses the full training set"
+  },
+  "conditions": {
+    "beta0p03": {
+      "beta": 0.03,
+      "adapter": "outputs/task1_dpo/beta0p03",
+      "name": "beta0p03",
+      "preference_eval_file": "data/dpo_standard_eval.jsonl",
+      "preference": {
+        "overall": {
+          "n": 290,
+          "preference_accuracy": 0.6206896551724138,
+          "dpo_loss": 0.6907268951679099,
+          "margin_mean": 0.16448700029788346,
+          "margin_std": 0.6252283758752951,
+          "chosen_reward_mean": -0.004282551284237154,
+          "rejected_reward_mean": -0.00921716129009066,
+          "chosen_longer_fraction": 0.503448275862069
+        },
+        "skipped_too_long": 10,
+        "beta_used_for_loss": 0.03
+      },
+      "generation": {
+        "n_prompts": 64,
+        "reward": {
+          "mean": 1.0840134620666504,
+          "std": 1.4127634641830218,
+          "n": 64
+        },
+        "kl_token_mean": -0.0002414285125519512,
+        "kl_seq_mean": -0.04011485628871014,
+        "kl_seq_std": 0.21589360883633874,
+        "sample_entropy": 0.7377482191077434,
+        "full_entropy": 0.9275856720930721,
+        "response_length": {
+          "mean": 166.15625,
+          "std": 101.22873522838019,
+          "median": 244.0,
+          "iqr": 202.25,
+          "min": 2.0,
+          "max": 256.0,
+          "n": 64
+        },
+        "truncated_fraction": 0.5,
+        "decoding": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "do_sample": true,
+          "max_new_tokens": 256,
+          "seed": 6304
+        },
+        "word_limit_compliance": 0.0,
+        "word_limit_n": 1
+      },
+      "word_limit": {
+        "compliance": 0.5,
+        "n": 10,
+        "response_length": {
+          "mean": 47.6,
+          "std": 20.12560558095085,
+          "median": 41.5,
+          "iqr": 35.75,
+          "min": 25.0,
+          "max": 78.0,
+          "n": 10
+        },
+        "word_count": {
+          "mean": 40.0,
+          "std": 16.994116628998402,
+          "median": 33.5,
+          "iqr": 33.0,
+          "min": 22.0,
+          "max": 65.0,
+          "n": 10
+        },
+        "mean_words_over_limit": 7.9
+      }
+    },
+    "beta0p1": {
+      "beta": 0.1,
+      "adapter": "outputs/task1_dpo/beta0p1",
+      "name": "beta0p1",
+      "preference_eval_file": "data/dpo_standard_eval.jsonl",
+      "preference": {
+        "overall": {
+          "n": 290,
+          "preference_accuracy": 0.6344827586206897,
+          "dpo_loss": 0.685971756022552,
+          "margin_mean": 0.15303430161599454,
+          "margin_std": 0.5982094167558984,
+          "chosen_reward_mean": -0.01403993187054735,
+          "rejected_reward_mean": -0.02934336204467149,
+          "chosen_longer_fraction": 0.503448275862069
+        },
+        "skipped_too_long": 10,
+        "beta_used_for_loss": 0.1
+      },
+      "generation": {
+        "n_prompts": 64,
+        "reward": {
+          "mean": 1.0028021931648254,
+          "std": 1.3936861360688866,
+          "n": 64
+        },
+        "kl_token_mean": -0.0002197779613081322,
+        "kl_seq_mean": -0.036472839485213626,
+        "kl_seq_std": 0.2290090790885564,
+        "sample_entropy": 0.700511934235692,
+        "full_entropy": 0.9015974624579555,
+        "response_length": {
+          "mean": 165.953125,
+          "std": 102.33285605187795,
+          "median": 234.5,
+          "iqr": 202.25,
+          "min": 2.0,
+          "max": 256.0,
+          "n": 64
+        },
+        "truncated_fraction": 0.5,
+        "decoding": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "do_sample": true,
+          "max_new_tokens": 256,
+          "seed": 6304
+        },
+        "word_limit_compliance": 0.0,
+        "word_limit_n": 1
+      },
+      "word_limit": {
+        "compliance": 0.5,
+        "n": 10,
+        "response_length": {
+          "mean": 47.8,
+          "std": 20.252407264322926,
+          "median": 42.0,
+          "iqr": 35.75,
+          "min": 25.0,
+          "max": 80.0,
+          "n": 10
+        },
+        "word_count": {
+          "mean": 40.6,
+          "std": 17.692936443677176,
+          "median": 34.0,
+          "iqr": 33.0,
+          "min": 22.0,
+          "max": 68.0,
+          "n": 10
+        },
+        "mean_words_over_limit": 8.4
+      }
+    },
+    "beta0p3": {
+      "beta": 0.3,
+      "adapter": "outputs/task1_dpo/beta0p3",
+      "name": "beta0p3",
+      "preference_eval_file": "data/dpo_standard_eval.jsonl",
+      "preference": {
+        "overall": {
+          "n": 290,
+          "preference_accuracy": 0.6379310344827587,
+          "dpo_loss": 0.6752854596951913,
+          "margin_mean": 0.1431504107240973,
+          "margin_std": 0.5496266122054126,
+          "chosen_reward_mean": -0.03372026604825052,
+          "rejected_reward_mean": -0.07666538926547971,
+          "chosen_longer_fraction": 0.503448275862069
+        },
+        "skipped_too_long": 10,
+        "beta_used_for_loss": 0.3
+      },
+      "generation": {
+        "n_prompts": 64,
+        "reward": {
+          "mean": 1.0458118915557861,
+          "std": 1.384966162599271,
+          "n": 64
+        },
+        "kl_token_mean": -0.00011732299402015987,
+        "kl_seq_mean": -0.019473783835564973,
+        "kl_seq_std": 0.17243051491621267,
+        "sample_entropy": 0.7073178662394639,
+        "full_entropy": 0.9043020761908318,
+        "response_length": {
+          "mean": 165.984375,
+          "std": 102.11994972021566,
+          "median": 228.0,
+          "iqr": 202.25,
+          "min": 2.0,
+          "max": 256.0,
+          "n": 64
+        },
+        "truncated_fraction": 0.484375,
+        "decoding": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "do_sample": true,
+          "max_new_tokens": 256,
+          "seed": 6304
+        },
+        "word_limit_compliance": 0.0,
+        "word_limit_n": 1
+      },
+      "word_limit": {
+        "compliance": 0.5,
+        "n": 10,
+        "response_length": {
+          "mean": 47.5,
+          "std": 19.976235881666998,
+          "median": 41.5,
+          "iqr": 35.75,
+          "min": 25.0,
+          "max": 78.0,
+          "n": 10
+        },
+        "word_count": {
+          "mean": 40.3,
+          "std": 17.45307995741726,
+          "median": 33.5,
+          "iqr": 33.0,
+          "min": 22.0,
+          "max": 68.0,
+          "n": 10
+        },
+        "mean_words_over_limit": 8.2
+      }
+    }
+  }
+}

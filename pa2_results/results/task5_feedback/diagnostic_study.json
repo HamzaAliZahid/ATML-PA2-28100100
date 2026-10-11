@@ -1,0 +1,178 @@
+{
+  "n_problems": 20,
+  "pairs": {
+    "reasoning_only": {
+      "better": "clean_correct",
+      "worse": "corrupt_reasoning_correct_final"
+    },
+    "outcome_only": {
+      "better": "clean_correct",
+      "worse": "good_reasoning_wrong_final"
+    },
+    "persuasive_filler": {
+      "better": "clean_correct",
+      "worse": "persuasive_filler_correct"
+    },
+    "gold_distractor": {
+      "better": "clean_correct",
+      "worse": "gold_distractor_wrong_final"
+    },
+    "distractor_vs_wrong_final": {
+      "better": "good_reasoning_wrong_final",
+      "worse": "gold_distractor_wrong_final"
+    }
+  },
+  "judge_combination_rule": "Query the judge in both presentation orders; combine into a single preference.\n\nEach order returns A/B/TIE for (first, second). Order 2 is mapped back to (a, b).\nCombined: both prefer a -> A; both prefer b -> B; otherwise TIE (inconsistent or tied).",
+  "by_pair": {
+    "reasoning_only": {
+      "verifier": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 1.0,
+        "wrong_preference_rate": 0.0
+      },
+      "ai_judge": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 1.0,
+        "wrong_preference_rate": 0.0
+      },
+      "ai_judge_order1_only": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 1.0,
+        "wrong_preference_rate": 0.0
+      },
+      "ai_judge_order_consistency": 1.0,
+      "ai_judge_mean_score_for_better": 0.5,
+      "verifier_judge_agreement": 1.0
+    },
+    "outcome_only": {
+      "verifier": {
+        "n": 20,
+        "better_rate": 1.0,
+        "tie_rate": 0.0,
+        "wrong_preference_rate": 0.0
+      },
+      "ai_judge": {
+        "n": 20,
+        "better_rate": 0.15,
+        "tie_rate": 0.85,
+        "wrong_preference_rate": 0.0
+      },
+      "ai_judge_order1_only": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 1.0,
+        "wrong_preference_rate": 0.0
+      },
+      "ai_judge_order_consistency": 0.85,
+      "ai_judge_mean_score_for_better": 0.5375,
+      "verifier_judge_agreement": 0.15
+    },
+    "persuasive_filler": {
+      "verifier": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 1.0,
+        "wrong_preference_rate": 0.0
+      },
+      "ai_judge": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 0.75,
+        "wrong_preference_rate": 0.25
+      },
+      "ai_judge_order1_only": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 0.75,
+        "wrong_preference_rate": 0.25
+      },
+      "ai_judge_order_consistency": 1.0,
+      "ai_judge_mean_score_for_better": 0.375,
+      "verifier_judge_agreement": 0.75
+    },
+    "gold_distractor": {
+      "verifier": {
+        "n": 20,
+        "better_rate": 1.0,
+        "tie_rate": 0.0,
+        "wrong_preference_rate": 0.0
+      },
+      "ai_judge": {
+        "n": 20,
+        "better_rate": 0.35,
+        "tie_rate": 0.6,
+        "wrong_preference_rate": 0.05
+      },
+      "ai_judge_order1_only": {
+        "n": 20,
+        "better_rate": 0.25,
+        "tie_rate": 0.7,
+        "wrong_preference_rate": 0.05
+      },
+      "ai_judge_order_consistency": 0.7,
+      "ai_judge_mean_score_for_better": 0.575,
+      "verifier_judge_agreement": 0.35
+    },
+    "distractor_vs_wrong_final": {
+      "verifier": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 1.0,
+        "wrong_preference_rate": 0.0
+      },
+      "ai_judge": {
+        "n": 20,
+        "better_rate": 0.05,
+        "tie_rate": 0.95,
+        "wrong_preference_rate": 0.0
+      },
+      "ai_judge_order1_only": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 1.0,
+        "wrong_preference_rate": 0.0
+      },
+      "ai_judge_order_consistency": 0.95,
+      "ai_judge_mean_score_for_better": 0.5125,
+      "verifier_judge_agreement": 0.95
+    }
+  },
+  "S_reason": {
+    "verifier": 0.0,
+    "ai_judge": 0.0
+  },
+  "S_outcome": {
+    "verifier": 1.0,
+    "ai_judge": 0.15
+  },
+  "S_outcome_incl_distractor": {
+    "verifier": 1.0,
+    "ai_judge": 0.25
+  },
+  "filler_susceptibility_ai_judge": 0.25,
+  "per_variant_mean_signal": {
+    "clean_correct": {
+      "verifier": 1.0,
+      "rlaif_group_reward": 0.49375
+    },
+    "corrupt_reasoning_correct_final": {
+      "verifier": 1.0,
+      "rlaif_group_reward": 0.5
+    },
+    "gold_distractor_wrong_final": {
+      "verifier": 0.0,
+      "rlaif_group_reward": 0.425
+    },
+    "good_reasoning_wrong_final": {
+      "verifier": 0.0,
+      "rlaif_group_reward": 0.48125
+    },
+    "persuasive_filler_correct": {
+      "verifier": 1.0,
+      "rlaif_group_reward": 0.6
+    }
+  }
+}

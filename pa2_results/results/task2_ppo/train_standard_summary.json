@@ -1,0 +1,16 @@
+{
+  "run_name": "standard",
+  "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task2_ppo/standard",
+  "updates": 20,
+  "clip_epsilon": 0.2,
+  "kl_beta": 0.1,
+  "ppo_epochs": 2,
+  "prompts_per_update": 1,
+  "policy_learning_rate": 3e-06,
+  "max_response_length": 512,
+  "seed": 6304,
+  "generated_tokens_total": 4299,
+  "wall_clock_s": 239.63611762799997,
+  "peak_vram_gb": 7.49037504196167,
+  "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/train_standard_log.jsonl"
+}

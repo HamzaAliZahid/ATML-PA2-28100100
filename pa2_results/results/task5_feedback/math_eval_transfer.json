@@ -1,0 +1,93 @@
+{
+  "dataset": "transfer",
+  "n": 100,
+  "decoding": "greedy",
+  "max_new_tokens": 512,
+  "policies": {
+    "sft": {
+      "exact_accuracy": 0.44,
+      "format_compliance": 0.57,
+      "accuracy_given_format": 0.7719298245614035,
+      "truncated_fraction": 0.0,
+      "response_length": {
+        "mean": 163.96,
+        "std": 71.74579012039662,
+        "median": 143.0,
+        "iqr": 79.0,
+        "min": 54.0,
+        "max": 361.0,
+        "n": 100
+      },
+      "accuracy_by_svamp_type": {
+        "Subtraction": 0.5614035087719298,
+        "Addition": 0.25,
+        "Multiplication": 0.1111111111111111,
+        "Common-Division": 0.42857142857142855
+      }
+    },
+    "rlvr": {
+      "exact_accuracy": 0.46,
+      "format_compliance": 0.59,
+      "accuracy_given_format": 0.7796610169491526,
+      "truncated_fraction": 0.0,
+      "response_length": {
+        "mean": 164.07,
+        "std": 72.54050661526978,
+        "median": 140.0,
+        "iqr": 79.25,
+        "min": 54.0,
+        "max": 361.0,
+        "n": 100
+      },
+      "accuracy_by_svamp_type": {
+        "Subtraction": 0.5964912280701754,
+        "Addition": 0.25,
+        "Multiplication": 0.1111111111111111,
+        "Common-Division": 0.42857142857142855
+      },
+      "pairwise_vs_sft": {
+        "win_rate_vs_sft": 0.515,
+        "wins": 12,
+        "losses": 9,
+        "ties": 79,
+        "n": 100,
+        "verifier_judge_agreement_all": 0.77,
+        "verifier_decisive_pairs": 4,
+        "judge_agrees_on_verifier_decisive": 0.25,
+        "judge_tie_rate_when_verifier_ties": 0.7916666666666666
+      }
+    },
+    "rlaif": {
+      "exact_accuracy": 0.44,
+      "format_compliance": 0.57,
+      "accuracy_given_format": 0.7719298245614035,
+      "truncated_fraction": 0.0,
+      "response_length": {
+        "mean": 162.98,
+        "std": 70.5209160462341,
+        "median": 140.0,
+        "iqr": 79.25,
+        "min": 54.0,
+        "max": 361.0,
+        "n": 100
+      },
+      "accuracy_by_svamp_type": {
+        "Subtraction": 0.5614035087719298,
+        "Addition": 0.25,
+        "Multiplication": 0.1111111111111111,
+        "Common-Division": 0.42857142857142855
+      },
+      "pairwise_vs_sft": {
+        "win_rate_vs_sft": 0.525,
+        "wins": 13,
+        "losses": 8,
+        "ties": 79,
+        "n": 100,
+        "verifier_judge_agreement_all": 0.79,
+        "verifier_decisive_pairs": 2,
+        "judge_agrees_on_verifier_decisive": 0.5,
+        "judge_tie_rate_when_verifier_ties": 0.7959183673469388
+      }
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "length_bins": [
+    0,
+    6.0,
+    74.0,
+    510.0
+  ],
+  "bin_rule": "terciles of pooled training-completion lengths",
+  "conditions": {
+    "grpo": {
+      "heldout": {
+        "n_prompts": 64,
+        "reward": {
+          "mean": 1.482435941696167,
+          "std": 1.2327797416405721,
+          "n": 64
+        },
+        "kl_token_mean": 6.20121680881362e-05,
+        "kl_seq_mean": 0.018422458622808335,
+        "kl_seq_std": 0.08098756205171989,
+        "sample_entropy": 0.7161770521124708,
+        "full_entropy": 0.9452991475216843,
+        "response_length": {
+          "mean": 297.078125,
+          "std": 273.52343961986946,
+          "median": 216.0,
+          "iqr": 439.0,
+          "min": 2.0,
+          "max": 768.0,
+          "n": 64
+        },
+        "truncated_fraction": 0.15625,
+        "decoding": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "do_sample": true,
+          "max_new_tokens": 768,
+          "seed": 6304
+        },
+        "adapter": "outputs/task3_grpo/norm_grpo"
+      },
+      "train_summary": {
+        "run_name": "norm_grpo",
+        "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task3_grpo/norm_grpo",
+        "updates": 8,
+        "loss_type": "grpo",
+        "num_generations": 4,
+        "prompts_per_update": 1,
+        "clip_epsilon": 0.2,
+        "kl_beta": 0.1,
+        "learning_rate": 5e-06,
+        "max_completion_length": 512,
+        "mask_truncated_completions": true,
+        "seed": 6304,
+        "generated_tokens_total": 3396,
+        "wall_clock_s": 81.98202012899947,
+        "peak_vram_gb": 8.37927770614624,
+        "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task3_grpo/train_norm_grpo_log.jsonl"
+      },
+      "train_response_length_trajectory": [
+        475.25,
+        5.75,
+        2.5,
+        170.25,
+        4.0,
+        12.5,
+        59.25,
+        119.5
+      ],
+      "train_reward_trajectory": [
+        2.650146484375,
+        1.1724853515625,
+        1.5823974609375,
+        0.8636474609375,
+        -0.1353759765625,
+        0.8482666015625,
+        -0.14111328125,
+        0.2733154296875
+      ],
+      "train_kl_trajectory": [
+        -0.0001997646759264171,
+        0.0006358011160045862,
+        -0.001608963357284665,
+        0.00025927284150384367,
+        -8.624906331533566e-05,
+        -0.001807435997761786,
+        0.001454243785701692,
+        0.0004759608709719032
+      ],
+      "corr_length_gradnorm": -0.31695088938021415,
+      "corr_length_advantage": 0.24197117000499851,
+      "length_conditioned": {
+        "short": {
+          "n": 10,
+          "length_range": [
+            0.0,
+            6.0
+          ],
+          "grad_norm_mean": 1.0488465632826323,
+          "per_token_weight_mean": 0.15175577821830907,
+          "abs_advantage_mean": 0.36703983061015605,
+          "grad_norm_per_abs_adv": 1.3582787795486246,
+          "positive_adv_fraction": 0.2
+        },
+        "medium": {
+          "n": 10,
+          "length_range": [
+            6.0,
+            74.0
+          ],
+          "grad_norm_mean": 0.7278075183293469,
+          "per_token_weight_mean": 0.09536862902256438,
+          "abs_advantage_mean": 1.0287040695548058,
+          "grad_norm_per_abs_adv": 0.6678045098643304,
+          "positive_adv_fraction": 0.3
+        },
+        "long": {
+          "n": 11,
+          "length_range": [
+            74.0,
+            510.0
+          ],
+          "grad_norm_mean": 0.10535510316121327,
+          "per_token_weight_mean": 0.005586181371230165,
+          "abs_advantage_mean": 0.8711984889073805,
+          "grad_norm_per_abs_adv": 0.11847903694349342,
+          "positive_adv_fraction": 0.8181818181818182
+        }
+      },
+      "masked_truncated_completions": 1
+    },
+    "dr_grpo": {
+      "heldout": {
+        "n_prompts": 64,
+        "reward": {
+          "mean": 1.42948317527771,
+          "std": 1.5152287555593842,
+          "n": 64
+        },
+        "kl_token_mean": 0.0001320664481468627,
+        "kl_seq_mean": 0.0359055655899283,
+        "kl_seq_std": 0.08696174678673095,
+        "sample_entropy": 0.7696242313759285,
+        "full_entropy": 1.006706637173616,
+        "response_length": {
+          "mean": 271.875,
+          "std": 257.43964705344047,
+          "median": 178.0,
+          "iqr": 383.5,
+          "min": 2.0,
+          "max": 768.0,
+          "n": 64
+        },
+        "truncated_fraction": 0.09375,
+        "decoding": {
+          "temperature": 0.7,
+          "top_p": 0.9,
+          "do_sample": true,
+          "max_new_tokens": 768,
+          "seed": 6304
+        },
+        "adapter": "outputs/task3_grpo/norm_dr_grpo"
+      },
+      "train_summary": {
+        "run_name": "norm_dr_grpo",
+        "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task3_grpo/norm_dr_grpo",
+        "updates": 8,
+        "loss_type": "dr_grpo",
+        "num_generations": 4,
+        "prompts_per_update": 1,
+        "clip_epsilon": 0.2,
+        "kl_beta": 0.1,
+        "learning_rate": 5e-06,
+        "max_completion_length": 512,
+        "mask_truncated_completions": true,
+        "seed": 6304,
+        "generated_tokens_total": 3398,
+        "wall_clock_s": 86.22101140500035,
+        "peak_vram_gb": 8.38320779800415,
+        "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task3_grpo/train_norm_dr_grpo_log.jsonl"
+      },
+      "train_response_length_trajectory": [
+        475.25,
+        5.75,
+        2.5,
+        170.75,
+        4.0,
+        12.5,
+        59.25,
+        119.5
+      ],
+      "train_reward_trajectory": [
+        2.650146484375,
+        1.1724853515625,
+        1.5823974609375,
+        0.6822509765625,
+        -0.1353759765625,
+        0.8482666015625,
+        -0.14111328125,
+        0.2733154296875
+      ],
+      "train_kl_trajectory": [
+        -0.0001997646759264171,
+        -0.0005483422428369522,
+        0.0018137864535674453,
+        -2.8686836230917834e-06,
+        -0.00020130227494519204,
+        -0.0015620221383869648,
+        0.0011439449153840542,
+        6.659891823801445e-06
+      ],
+      "corr_length_gradnorm": 0.6165527568499473,
+      "corr_length_advantage": 0.24721776607407978,
+      "length_conditioned": {
+        "short": {
+          "n": 10,
+          "length_range": [
+            0.0,
+            6.0
+          ],
+          "grad_norm_mean": 0.005032855629709865,
+          "per_token_weight_mean": 0.000716874669160461,
+          "abs_advantage_mean": 0.36703983061015605,
+          "grad_norm_per_abs_adv": 0.013702393178377095,
+          "positive_adv_fraction": 0.2
+        },
+        "medium": {
+          "n": 10,
+          "length_range": [
+            6.0,
+            74.0
+          ],
+          "grad_norm_mean": 0.017655488165750497,
+          "per_token_weight_mean": 0.00200918763584923,
+          "abs_advantage_mean": 1.0287040695548058,
+          "grad_norm_per_abs_adv": 0.016787936603355084,
+          "positive_adv_fraction": 0.3
+        },
+        "long": {
+          "n": 11,
+          "length_range": [
+            74.0,
+            510.0
+          ],
+          "grad_norm_mean": 0.038938813038940305,
+          "per_token_weight_mean": 0.001591987817929211,
+          "abs_advantage_mean": 0.815097762779756,
+          "grad_norm_per_abs_adv": 0.04952658611761736,
+          "positive_adv_fraction": 0.7272727272727273
+        }
+      },
+      "masked_truncated_completions": 1
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "n_prompts": 64,
+  "reward": {
+    "mean": 1.5601348876953125,
+    "std": 1.382011125381258,
+    "n": 64
+  },
+  "kl_token_mean": -5.076985311626041e-07,
+  "kl_seq_mean": -0.00016147193127835635,
+  "kl_seq_std": 0.07939473686608751,
+  "sample_entropy": 0.7298296838853275,
+  "full_entropy": 0.9516476968759868,
+  "response_length": {
+    "mean": 318.046875,
+    "std": 265.69716253233565,
+    "median": 332.0,
+    "iqr": 445.5,
+    "min": 2.0,
+    "max": 768.0,
+    "n": 64
+  },
+  "truncated_fraction": 0.109375,
+  "decoding": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true,
+    "max_new_tokens": 768,
+    "seed": 6304
+  },
+  "adapter": "outputs/task2_ppo/kl_beta0",
+  "name": "kl_beta0",
+  "timestamp": "2026-10-10 18:52:32"
+}

@@ -1,0 +1,33 @@
+{
+  "n_prompts": 64,
+  "reward": {
+    "mean": 1.5381145477294922,
+    "std": 1.4400654905773822,
+    "n": 64
+  },
+  "kl_token_mean": 0.00011985918175557736,
+  "kl_seq_mean": 0.03498389867490914,
+  "kl_seq_std": 0.08208724788286163,
+  "sample_entropy": 0.7419058851373848,
+  "full_entropy": 0.954957793002678,
+  "response_length": {
+    "mean": 291.875,
+    "std": 258.8910545480473,
+    "median": 240.5,
+    "iqr": 408.25,
+    "min": 2.0,
+    "max": 768.0,
+    "n": 64
+  },
+  "truncated_fraction": 0.109375,
+  "decoding": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true,
+    "max_new_tokens": 768,
+    "seed": 6304
+  },
+  "adapter": "outputs/task3_grpo/standard",
+  "name": "standard",
+  "timestamp": "2026-10-10 17:58:54"
+}

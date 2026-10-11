@@ -1,0 +1,4 @@
+,n,chosen_tokens_mean,rejected_tokens_mean,length_difference_mean
+length_matched,500.0,150.922,150.812,0.11
+preferred_longer,500.0,225.28,104.794,120.486
+rejected_longer,500.0,94.364,199.47,-105.106

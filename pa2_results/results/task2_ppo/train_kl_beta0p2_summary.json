@@ -1,0 +1,16 @@
+{
+  "run_name": "kl_beta0p2",
+  "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task2_ppo/kl_beta0p2",
+  "updates": 8,
+  "clip_epsilon": 0.2,
+  "kl_beta": 0.2,
+  "ppo_epochs": 2,
+  "prompts_per_update": 1,
+  "policy_learning_rate": 3e-06,
+  "max_response_length": 512,
+  "seed": 6304,
+  "generated_tokens_total": 1108,
+  "wall_clock_s": 67.07006684099997,
+  "peak_vram_gb": 7.106949329376221,
+  "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task2_ppo/train_kl_beta0p2_log.jsonl"
+}

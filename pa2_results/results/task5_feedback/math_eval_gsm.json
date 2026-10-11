@@ -1,0 +1,75 @@
+{
+  "dataset": "gsm",
+  "n": 300,
+  "decoding": "greedy",
+  "max_new_tokens": 512,
+  "policies": {
+    "sft": {
+      "exact_accuracy": 0.2833333333333333,
+      "format_compliance": 0.35,
+      "accuracy_given_format": 0.8095238095238095,
+      "truncated_fraction": 0.016666666666666666,
+      "response_length": {
+        "mean": 274.33,
+        "std": 84.71163497418758,
+        "median": 259.5,
+        "iqr": 114.75,
+        "min": 107.0,
+        "max": 512.0,
+        "n": 300
+      }
+    },
+    "rlvr": {
+      "exact_accuracy": 0.2866666666666667,
+      "format_compliance": 0.36,
+      "accuracy_given_format": 0.7962962962962963,
+      "truncated_fraction": 0.02,
+      "response_length": {
+        "mean": 275.87666666666667,
+        "std": 86.29894624050877,
+        "median": 261.0,
+        "iqr": 115.0,
+        "min": 107.0,
+        "max": 512.0,
+        "n": 300
+      },
+      "pairwise_vs_sft": {
+        "win_rate_vs_sft": 0.5033333333333333,
+        "wins": 8,
+        "losses": 6,
+        "ties": 286,
+        "n": 300,
+        "verifier_judge_agreement_all": 0.92,
+        "verifier_decisive_pairs": 13,
+        "judge_agrees_on_verifier_decisive": 0.07692307692307693,
+        "judge_tie_rate_when_verifier_ties": 0.9581881533101045
+      }
+    },
+    "rlaif": {
+      "exact_accuracy": 0.2866666666666667,
+      "format_compliance": 0.36,
+      "accuracy_given_format": 0.7962962962962963,
+      "truncated_fraction": 0.023333333333333334,
+      "response_length": {
+        "mean": 275.45,
+        "std": 88.10834712632699,
+        "median": 260.5,
+        "iqr": 120.25,
+        "min": 107.0,
+        "max": 512.0,
+        "n": 300
+      },
+      "pairwise_vs_sft": {
+        "win_rate_vs_sft": 0.495,
+        "wins": 5,
+        "losses": 8,
+        "ties": 287,
+        "n": 300,
+        "verifier_judge_agreement_all": 0.9366666666666666,
+        "verifier_decisive_pairs": 7,
+        "judge_agrees_on_verifier_decisive": 0.0,
+        "judge_tie_rate_when_verifier_ties": 0.9590443686006825
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "run_name": "norm_grpo",
+  "output": "/kaggle/working/ATML-PA2-LLM-PostTraining/outputs/task3_grpo/norm_grpo",
+  "updates": 8,
+  "loss_type": "grpo",
+  "num_generations": 4,
+  "prompts_per_update": 1,
+  "clip_epsilon": 0.2,
+  "kl_beta": 0.1,
+  "learning_rate": 5e-06,
+  "max_completion_length": 512,
+  "mask_truncated_completions": true,
+  "seed": 6304,
+  "generated_tokens_total": 3396,
+  "wall_clock_s": 81.98202012899947,
+  "peak_vram_gb": 8.37927770614624,
+  "train_log": "/kaggle/working/ATML-PA2-LLM-PostTraining/results/task3_grpo/train_norm_grpo_log.jsonl"
+}
